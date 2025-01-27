@@ -100,9 +100,10 @@ export default function Home() {
                   <div className="flex flex-col items-center gap-4">
                     <div className="w-24 h-24 relative">
                       <Image
-                        src="/images/rose-hulman.png"
+                        src="/images/rose.png"
                         alt="Rose-Hulman"
                         fill
+                        sizes="(max-width: 96px) 100vw, 96px"
                         className="object-contain opacity-50 hover:opacity-100 transition-opacity"
                       />
                     </div>
@@ -114,6 +115,7 @@ export default function Home() {
                         src="/images/thompsonthrift.png"
                         alt="Thompson Thrift"
                         fill
+                        sizes="(max-width: 96px) 100vw, 96px"
                         className="object-contain opacity-50 hover:opacity-100 transition-opacity"
                       />
                     </div>
@@ -125,6 +127,7 @@ export default function Home() {
                         src="/images/envoy.png"
                         alt="Envoy"
                         fill
+                        sizes="(max-width: 96px) 100vw, 96px"
                         className="object-contain opacity-50 hover:opacity-100 transition-opacity"
                       />
                     </div>
@@ -136,6 +139,7 @@ export default function Home() {
                         src="/images/cornell.png"
                         alt="Cornell University"
                         fill
+                        sizes="(max-width: 96px) 100vw, 96px"
                         className="object-contain opacity-50 hover:opacity-100 transition-opacity"
                       />
                     </div>
@@ -147,6 +151,7 @@ export default function Home() {
                         src="/images/tesla.png"
                         alt="Tesla"
                         fill
+                        sizes="(max-width: 96px) 100vw, 96px"
                         className="object-contain opacity-50 hover:opacity-100 transition-opacity"
                       />
                     </div>

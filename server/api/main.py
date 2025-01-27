@@ -96,15 +96,15 @@ async def query_codebook(request: CodebookQuery):
     answer = z.get_info(f"What are the zoning laws for the code {request.query}")
     return answer
   
-@app.post("/query_codebook_by_id")
-async def query_codebook_by_id(request: CodebookQueryById):
-    try:
-        id = request.userId
-        z = PropertyZeroEntropy(api_key=os.getenv("ZERO_ENTROPY_API_KEY"), collection_name=id)
-        documents = z.documents.get_info_list(collection_name=id)
-        return documents
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error querying codebook by ID: {str(e)}")
+# @app.post("/query_codebook_by_id")
+# async def query_codebook_by_id(request: CodebookQueryById):
+#     try:
+#         id = request.userId
+#         z = PropertyZeroEntropy(api_key=os.getenv("ZERO_ENTROPY_API_KEY"), collection_name=id)
+#         documents = z.documents.get_info_list(collection_name=id)
+#         return documents
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=f"Error querying codebook by ID: {str(e)}")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)

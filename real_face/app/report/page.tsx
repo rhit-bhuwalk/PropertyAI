@@ -34,6 +34,7 @@ export default function ReportPage() {
   const [parsedFields, setParsedFields] = useState<Record<string, any> | null>(null)
   const [currentSnippetIndex, setCurrentSnippetIndex] = useState(0)
   const [userId, setUserId] = useState<string | null>(null)
+  const [codebookStatus, setCodebookStatus] = useState<"processing" | "complete" | "failed" | null>(null)
 
   useEffect(() => {
     const fileName = localStorage.getItem("uploadedPdfName")
@@ -63,6 +64,31 @@ export default function ReportPage() {
         setReportData(data)
         const extractedFields = parseZillowData(data)
         setParsedFields(extractedFields)
+
+        // Push data to ZeroEntropy in the background
+        const signedUrl = localStorage.getItem("signedUrl")
+        if (signedUrl && storedId) {
+          fetch("/api/zero-entropy", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+              url: signedUrl,
+              userId: storedId,
+              action: "push_codebook",
+            }),
+          })
+            .then((res) => {
+              if (!res.ok) {
+                return res.json().then((data) => {
+                  console.error("ZeroEntropy push error:", data.error || "Unknown")
+                })
+              }
+              console.log("ZeroEntropy push started successfully")
+            })
+            .catch((bgErr) => {
+              console.error("ZeroEntropy push failed in background:", bgErr)
+            })
+        }
       } catch (err) {
         console.error("Error generating report:", err)
         setError(err instanceof Error ? err.message : "An error occurred")
@@ -73,6 +99,36 @@ export default function ReportPage() {
 
     fetchReport()
   }, [])
+
+
+  useEffect(() => {
+    if (!userId) return
+    const checkStatus = async () => {
+      try {
+        const resp = await fetch("/api/zero-entropy-status", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ userId }),
+        })
+        const data = await resp.json()
+        
+        // data might be { status: "processing" | "complete" | "failed", error?: string }
+        if (data.status === "processing") {
+          setCodebookStatus("processing")
+        } else if (data.status === "complete") {
+          setCodebookStatus("complete")
+        } else if (data.status === "failed") {
+          setCodebookStatus("failed")
+          if (data.error) setError(data.error)
+        }
+      } catch (err) {
+        console.error("Error checking codebook status:", err)
+      }
+    }
+    const interval = setInterval(checkStatus, 20000)
+    return () => clearInterval(interval)
+  }, [userId])
+
 
   const fetchZoningData = async () => {
     if (!zoningCode) return
@@ -163,29 +219,52 @@ export default function ReportPage() {
                 <CardTitle className="text-lg font-semibold text-orange-950">Zoning</CardTitle>
               </CardHeader>
               <CardContent className="p-6">
-                <p className="text-orange-900 mb-4">Enter the zoning code that your property falls under:</p>
-                <div className="flex items-center gap-4 mb-6">
-                  <Input
-                    type="text"
-                    value={zoningCode}
-                    onChange={(e) => setZoningCode(e.target.value)}
-                    className="max-w-[200px] bg-white text-orange-950 
-                               placeholder:text-orange-300 border-orange-200 
-                               focus:border-orange-500 focus:ring-orange-500 focus-visible:ring-orange-500"
-                  />
-                  <Button
-                    onClick={fetchZoningData}
-                    disabled={!zoningCode}
-                    className="bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500"
-                  >
-                    Get Zoning Data
-                  </Button>
-                </div>
-                <ZoningDataTable
-                  zoningData={zoningData}
-                  currentSnippetIndex={currentSnippetIndex}
-                  setCurrentSnippetIndex={setCurrentSnippetIndex}
-                />
+                {/* Show a message if codebook is not yet indexed */}
+                {codebookStatus === "processing" && (
+                  <div className="text-orange-900 mb-4">
+                    <strong>Codebook indexing in progress...</strong>
+                  </div>
+                )}
+                {codebookStatus === "failed" && (
+                  <div className="text-red-600 mb-4">
+                    Failed to index codebook. Please contact support or try again later.
+                  </div>
+                )}
+                {codebookStatus !== "complete" ? (
+                  // If not complete, disable the form or hide it
+                  <div className="text-orange-600 italic">
+                    Codebook must finish indexing before you can query zoning data.
+                  </div>
+                ) : (
+                  // Render zoning input/search only if indexing is complete
+                  <>
+                    <p className="text-orange-900 mb-4">
+                      Enter the zoning code that your property falls under:
+                    </p>
+                    <div className="flex items-center gap-4 mb-6">
+                      <Input
+                        type="text"
+                        value={zoningCode}
+                        onChange={(e) => setZoningCode(e.target.value)}
+                        className="max-w-[200px] bg-white text-orange-950 
+                                   placeholder:text-orange-300 border-orange-200 
+                                   focus:border-orange-500 focus:ring-orange-500 focus-visible:ring-orange-500"
+                      />
+                      <Button
+                        onClick={fetchZoningData}
+                        disabled={!zoningCode}
+                        className="bg-orange-500 text-white hover:bg-orange-600 focus:ring-orange-500"
+                      >
+                        Get Zoning Data
+                      </Button>
+                    </div>
+                    <ZoningDataTable
+                      zoningData={zoningData}
+                      currentSnippetIndex={currentSnippetIndex}
+                      setCurrentSnippetIndex={setCurrentSnippetIndex}
+                    />
+                  </>
+                )}
               </CardContent>
             </Card>
           </div>
