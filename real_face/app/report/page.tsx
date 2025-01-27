@@ -35,7 +35,6 @@ export default function ReportPage() {
   const [currentSnippetIndex, setCurrentSnippetIndex] = useState(0)
   const [userId, setUserId] = useState<string | null>(null)
 
-
   useEffect(() => {
     const fileName = localStorage.getItem("uploadedPdfName")
     const storedId = localStorage.getItem("userId")
