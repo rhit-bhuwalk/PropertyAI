@@ -86,7 +86,7 @@ export default function UploadCodebook() {
         throw new Error("User ID not found")
       }
   
-      const response = await fetch("http://localhost:8000/push_codebook", {
+      const response = await fetch("http://localhost:8080/push_codebook", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

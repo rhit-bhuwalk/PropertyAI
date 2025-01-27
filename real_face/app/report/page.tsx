@@ -47,7 +47,7 @@ export default function ReportPage() {
     const fetchReport = async () => {
       try {
         const propertyUrl = localStorage.getItem("propertyUrl")
-        const response = await fetch("http://localhost:8000/get_mls_data", {
+        const response = await fetch("http://localhost:8080/get_mls_data", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
@@ -77,7 +77,7 @@ export default function ReportPage() {
   const fetchZoningData = async () => {
     if (!zoningCode) return
     try {
-      const response = await fetch("http://localhost:8000/query_codebook", {
+      const response = await fetch("http://localhost:8080/query_codebook", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException, Depends, Request
 from pydantic import BaseModel
-from openai import AsyncOpenAI
 import os, io
 from dotenv import load_dotenv
 from typing import Tuple, Callable
@@ -108,4 +107,4 @@ async def query_codebook_by_id(request: CodebookQueryById):
         raise HTTPException(status_code=500, detail=f"Error querying codebook by ID: {str(e)}")
 
 if __name__ == "__main__":
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8080)
