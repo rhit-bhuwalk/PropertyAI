@@ -35,7 +35,6 @@ class PropertyZeroEntropy(ZeroEntropy):
         """
         Downloads a PDF from `url`, base64-encodes it, and uploads it to the
         current collection. The `path` is automatically generated from the URL’s filename.
-        
         Returns a success or error string.
         """
         try:
