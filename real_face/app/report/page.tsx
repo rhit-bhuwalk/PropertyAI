@@ -33,10 +33,14 @@ export default function ReportPage() {
   const [zoningData, setZoningData] = useState<ZoningResponse[]>([])
   const [parsedFields, setParsedFields] = useState<Record<string, any> | null>(null)
   const [currentSnippetIndex, setCurrentSnippetIndex] = useState(0)
-  const userId = localStorage.getItem("userId")
+  const [userId, setUserId] = useState<string | null>(null)
+
 
   useEffect(() => {
     const fileName = localStorage.getItem("uploadedPdfName")
+    const storedId = localStorage.getItem("userId")
+    setUserId(storedId)
+
     if (fileName) {
       setUploadedFileName(fileName)
     }
