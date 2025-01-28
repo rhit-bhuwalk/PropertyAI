@@ -29,9 +29,8 @@ export async function POST(req: NextRequest) {
 
 async function handleStatusCheck(userId: string) {
   try {
-    // Try to query the collection - if it fails with 404, it's still processing
     try {
-      const result = await zeroEntropy.queries.topSnippets({
+      const result = await zeroEntropy.queries.topDocuments({
         collection_name: userId,
         query: "test query",
         k: 1

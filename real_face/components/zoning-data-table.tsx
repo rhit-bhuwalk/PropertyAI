@@ -28,7 +28,7 @@ export function ZoningDataTable({ zoningData, currentSnippetIndex, setCurrentSni
   return (
     <Card className="mt-6">
       <CardHeader className="bg-orange-50">
-        <CardTitle className="text-lg font-semibold text-orange-950">Zoning Snippets</CardTitle>
+        <CardTitle className="text-lg font-semibold text-orange-950">Zoning Information</CardTitle>
       </CardHeader>
       <CardContent className="p-0">
         <Table>

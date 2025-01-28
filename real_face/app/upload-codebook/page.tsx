@@ -86,28 +86,6 @@ export default function UploadCodebook() {
         throw new Error("User ID not found")
       }
       router.push("/report")
-      
-      fetch("/api/zeroEntropy", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          url: signedUrl,
-          userId: userId,
-          action: "push_codebook",
-        }),
-      })
-        .then((res) => {
-          if (!res.ok) {
-            return res.json().then((data) => {
-              console.error("ZeroEntropy push error:", data.error || "Unknown");
-            });
-          }
-          console.log("ZeroEntropy push started successfully");
-        })
-        .catch((bgErr) => {
-          console.error("ZeroEntropy push failed in background:", bgErr);
-        });
-
     } catch (err) {
       console.error("Error uploading file:", err);
       setError(err instanceof Error ? err.message : "Failed to upload file. Please try again.");
