@@ -26,19 +26,13 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-class CodebookQueryById(BaseModel):
-    userId: str
-
 class ZillowRequest(BaseModel):
     url: str
-
-class CodebookRequest(BaseModel):
-    url: str
-    userId: str
 
 class CodebookQuery(BaseModel):
     query: str
     userId: str
+    query_type: str
 
 @app.post("/get_mls_data")
 async def get_mls_data(request: ZillowRequest):
@@ -67,44 +61,16 @@ async def get_mls_data(request: ZillowRequest):
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error processing Zillow data: {str(e)}")
 
-@app.post("/push_codebook")
-async def push_codebook(request: CodebookRequest):
-    try:
-        id = request.userId
-        z = PropertyZeroEntropy(api_key=os.getenv("ZERO_ENTROPY_API_KEY"), collection_name=id)
-        try:
-            z.add_collection()
-        except Exception as ze:
-            if ze.status_code == 409:
-                z.delete_collection()
-                z.add_collection()
-            else:
-                raise
-        message = z.process_pdf(request.url)
-        print(message)
-        print('codebook pushed!')
-
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error pushing codebook to ZeroEntropy: {str(e)}")
-    finally:
-        return {"message": "Codebook pushed successfully", "id": id}
-
 @app.post("/query_codebook")
 async def query_codebook(request: CodebookQuery):
     id = request.userId
+    query = request.query
     z = PropertyZeroEntropy(api_key=os.getenv("ZERO_ENTROPY_API_KEY"), collection_name=id)
-    answer = z.get_info(f"What are the zoning laws for the code {request.query}")
+    if request.query_type == "zoning":
+        query = f"Which section is related to the requirements in zoning code {request.query}?"
+    answer = z.get_snippets_info(query)
     return answer
   
-@app.post("/query_codebook_by_id")
-async def query_codebook_by_id(request: CodebookQueryById):
-    try:
-        id = request.userId
-        z = PropertyZeroEntropy(api_key=os.getenv("ZERO_ENTROPY_API_KEY"), collection_name=id)
-        documents = z.documents.get_info_list(collection_name=id)
-        return documents
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Error querying codebook by ID: {str(e)}")
 
 if __name__ == "__main__":
     uvicorn.run(app, host="0.0.0.0", port=8080)

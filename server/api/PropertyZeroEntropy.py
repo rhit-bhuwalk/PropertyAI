@@ -15,22 +15,6 @@ class PropertyZeroEntropy(ZeroEntropy):
         super().__init__(api_key=api_key)
         self.collection_name = collection_name
 
-    def add_collection(self) -> str:
-        """
-        Adds a new collection with the stored collection name.
-        Returns the response message from ZeroEntropy.
-        """
-        resp = self.collections.add(collection_name=self.collection_name)
-        return resp.message
-    
-    def delete_collection(self) -> str:
-        """
-        Deletes the current collection.
-        Returns the response message from ZeroEntropy.
-        """
-        resp = self.collections.delete(collection_name=self.collection_name)
-        return resp.message
-
     def process_pdf(self, url: str) -> str:
         """
         Downloads a PDF from `url`, base64-encodes it, and uploads it to the
@@ -74,11 +58,22 @@ class PropertyZeroEntropy(ZeroEntropy):
         )
         return resp.results
 
-    def get_info(self, query: str, k: int = 5):
+    def get_snippets_info(self, query: str, k: int = 5):
         """
         Returns the top K snippets for a given query in this collection.
         """
         resp = self.queries.top_snippets(
+            collection_name=self.collection_name,
+            query=query,
+            k=k,
+        )
+        return resp.results
+    
+    def get_pages_info(self, query: str, k: int = 5):
+        """
+        Returns the top K pages for a given query in this collection.
+        """
+        resp = self.queries.top_pages(
             collection_name=self.collection_name,
             query=query,
             k=k,

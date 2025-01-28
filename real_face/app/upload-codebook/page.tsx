@@ -60,7 +60,7 @@ export default function UploadCodebook() {
         client,
         params: {
           Bucket: "municipalcodes",
-          Key: key, // reusing the same `key`
+          Key: key,
           Body: file,
           ContentType: file.type,
         },
@@ -80,36 +80,17 @@ export default function UploadCodebook() {
         Key: key, 
       })
       const signedUrl = await getSignedUrl(client, command, { expiresIn: 3600 })
-  
+      
       const userId = localStorage.getItem("userId")
       if (!userId) {
         throw new Error("User ID not found")
       }
-  
-      const response = await fetch("http://localhost:8080/push_codebook", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          url: signedUrl,
-          userId: userId,
-        }),
-      })
-  
-      if (!response.ok) {
-        throw new Error("Failed to push codebook")
-      } else {
-        console.log("Successfully pushed codebook")
-      }
-  
-      // 6) Go to your report page
       router.push("/report")
     } catch (err) {
-      console.error("Error uploading file:", err)
-      setError("Failed to upload file. Please try again.")
+      console.error("Error uploading file:", err);
+      setError(err instanceof Error ? err.message : "Failed to upload file. Please try again.");
     } finally {
-      setIsUploading(false)
+      setIsUploading(false);
     }
   }
 
