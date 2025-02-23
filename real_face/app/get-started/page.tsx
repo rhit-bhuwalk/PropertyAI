@@ -8,12 +8,48 @@ import { useRouter } from "next/navigation"
 import { v4 as uuidv4 } from "uuid"
 
 // Declare Google Maps types
+interface MapsEventListener {
+  remove(): void
+}
+
+interface AutocompleteInstance {
+  getPlace(): {
+    formatted_address?: string
+    [key: string]: any
+  }
+  addListener(eventName: string, handler: () => void): MapsEventListener
+  getBounds(): any
+  getFields(): string[]
+  setBounds(bounds: any): void
+  setComponentRestrictions(restrictions: { country: string | string[] }): void
+  setFields(fields: string[]): void
+  setOptions(options: AutocompleteOptions): void
+  setTypes(types: string[]): void
+  bindTo(key: string, target: any): void
+  get(key: string): any
+  notify(key: string): void
+  set(key: string, value: any): void
+  setValues(values: { [key: string]: any }): void
+  unbind(key: string): void
+  unbindAll(): void
+}
+
+interface AutocompleteOptions {
+  types?: string[]
+  componentRestrictions?: {
+    country: string | string[]
+  }
+}
+
 declare global {
   interface Window {
     google: {
       maps: {
         places: {
-          Autocomplete: typeof google.maps.places.Autocomplete
+          Autocomplete: new (
+            inputField: HTMLInputElement,
+            opts?: AutocompleteOptions
+          ) => AutocompleteInstance
         }
         event: {
           clearInstanceListeners(instance: any): void
@@ -70,12 +106,14 @@ export default function GetStarted() {
           }
         )
         
-        autocompleteInstance.current.addListener("place_changed", () => {
-          const place = autocompleteInstance.current?.getPlace()
-          if (place?.formatted_address) {
-            setAddress(place.formatted_address)
-          }
-        })
+        if (autocompleteInstance.current) {
+          autocompleteInstance.current.addListener("place_changed", () => {
+            const place = autocompleteInstance.current?.getPlace()
+            if (place?.formatted_address) {
+              setAddress(place.formatted_address)
+            }
+          })
+        }
       }
     }
     loadGoogleMapsScript(initializeAutocomplete)
