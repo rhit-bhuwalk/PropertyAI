@@ -22,18 +22,24 @@ export default function Home() {
           }
         })
       },
-      { threshold: 0.5 },
+      { threshold: 0.1 }
     )
 
     sectionRefs.current.forEach((section) => {
-      if (section) observer.observe(section)
+      if (section) {
+        const rect = section.getBoundingClientRect()
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          section.classList.add("active")
+        }
+        observer.observe(section)
+      }
     })
 
     return () => observer.disconnect()
   }, [])
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col">
+    <div className="min-h-screen bg-black text-white flex flex-col opacity-0 animate-fade-in">
       <header className="container mx-auto px-4 py-6 flex justify-between items-center fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-white/10 rounded flex items-center justify-center">
@@ -60,7 +66,7 @@ export default function Home() {
             sectionRefs.current[0] = el;
             return undefined;
           }}
-          className="flex-1 flex flex-col items-center justify-center text-center px-4 min-h-screen pt-20 section"
+          className="flex-1 flex flex-col items-center justify-center text-center px-4 min-h-screen pt-20 section opacity-0 transition-all duration-500"
         >
           <div className="max-w-4xl space-y-8">
             <h1 className="text-5xl sm:text-6xl md:text-7xl font-medium tracking-tight leading-[1.1]">
@@ -90,7 +96,7 @@ export default function Home() {
             sectionRefs.current[1] = el;
             return undefined;
           }}
-          className="w-full overflow-hidden py-20 bg-black border-t border-white/5 section"
+          className="w-full overflow-hidden py-20 bg-black border-t border-white/5 section opacity-0 transition-all duration-500"
         >
           <p className="text-center text-sm text-zinc-400 mb-12">Built by Developers from</p>
           <div className="flex">
@@ -168,7 +174,7 @@ export default function Home() {
             sectionRefs.current[2] = el;
             return undefined;
           }}
-          className="min-h-screen flex flex-col items-center justify-center px-4 py-32 snap-start transition-opacity duration-500 ease-in-out section"
+          className="min-h-screen flex flex-col items-center justify-center px-4 py-32 snap-start section opacity-0 transition-all duration-500"
         >
           <div className="max-w-4xl mx-auto w-full space-y-16">
             <h2 className="text-3xl sm:text-4xl font-medium text-center inline-block animate-gradient-text bg-gradient-to-r from-white via-orange-500 to-white bg-[length:200%_auto] bg-clip-text text-transparent">
@@ -212,7 +218,7 @@ export default function Home() {
             sectionRefs.current[3] = el;
             return undefined;
           }}
-          className="min-h-screen flex flex-col items-center justify-center px-4 py-32 bg-black section"
+          className="min-h-screen flex flex-col items-center justify-center px-4 py-32 bg-black section opacity-0 transition-all duration-500"
         >
           <div className="max-w-4xl mx-auto w-full text-center space-y-48">
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight leading-tight">

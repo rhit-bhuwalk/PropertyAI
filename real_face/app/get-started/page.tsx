@@ -1,79 +1,101 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { PropertyConfirmationModal } from "@/components/PropertyConfirmationModal"
 import { v4 as uuidv4 } from "uuid"
 
-interface OGData {
-  ogTitle?: string
-  ogImage?: { url: string }[]
-  ogDescription?: string
-  ogUrl?: string
-  ogSiteName?: string
-  twitterCard?: string
-  twitterTitle?: string
-  twitterDescription?: string
-  twitterImage?: { url: string }[]
+// Declare Google Maps types
+declare global {
+  interface Window {
+    google: {
+      maps: {
+        places: {
+          Autocomplete: typeof google.maps.places.Autocomplete
+        }
+        event: {
+          clearInstanceListeners(instance: any): void
+        }
+      }
+    }
+  }
+}
+
+// Helper to load Google Maps script
+const loadGoogleMapsScript = (callback: () => void) => {
+  const existingScript = document.getElementById('google-maps-script')
+  if (existingScript) {
+    if (window.google?.maps) {
+      callback()
+    } else {
+      existingScript.addEventListener('load', callback)
+    }
+    return
+  }
+
+  const script = document.createElement("script")
+  script.id = 'google-maps-script'
+  script.src = `https://maps.googleapis.com/maps/api/js?key=${process.env.NEXT_PUBLIC_GOOGLE_API_KEY}&libraries=places`
+  script.async = true
+  script.defer = true
+  script.onload = callback
+  document.body.appendChild(script)
 }
 
 export default function GetStarted() {
-  const [url, setUrl] = useState("")
-  const [ogData, setOgData] = useState<OGData | null>(null)
-  const [isLoading, setIsLoading] = useState(false)
+  const [address, setAddress] = useState("")
   const [error, setError] = useState<string | null>(null)
-  const [isModalOpen, setIsModalOpen] = useState(false)
   const router = useRouter()
+  const autocompleteInput = useRef<HTMLInputElement>(null)
+  const autocompleteInstance = useRef<google.maps.places.Autocomplete | null>(null)
 
   useEffect(() => {
-    // Generate and store UUID if it doesn't exist
+    // Generate and store a UUID if it doesn't exist
     const existingUserId = localStorage.getItem("userId")
     if (!existingUserId) {
       const userId = uuidv4()
       localStorage.setItem("userId", userId)
     }
-  }, [])
 
-  const fetchOGData = async (url: string) => {
-    setIsLoading(true)
-    setError(null)
-    setOgData(null)
-
-    try {
-      console.log("Fetching OG data for:", url)
-      const response = await fetch(`/api/og?url=${encodeURIComponent(url)}`)
-      const data = await response.json()
-
-      if (response.ok && data.ogTitle && data.ogImage) {
-        console.log("OG data received:", data)
-        setOgData(data)
-        setIsModalOpen(true)
-      } else {
-        handleContinue()
+    // Initialize Google Places Autocomplete
+    const initializeAutocomplete = () => {
+      if (autocompleteInput.current && window.google?.maps?.places) {
+        autocompleteInstance.current = new window.google.maps.places.Autocomplete(
+          autocompleteInput.current,
+          {
+            types: ["address"],
+            componentRestrictions: { country: "us" }
+          }
+        )
+        
+        autocompleteInstance.current.addListener("place_changed", () => {
+          const place = autocompleteInstance.current?.getPlace()
+          if (place?.formatted_address) {
+            setAddress(place.formatted_address)
+          }
+        })
       }
-    } catch (error) {
-      console.error("Error fetching OG data:", error)
-      handleContinue()
-    } finally {
-      setIsLoading(false)
     }
-  }
+    loadGoogleMapsScript(initializeAutocomplete)
+    return () => {
+      if (autocompleteInstance.current) {
+        window.google.maps.event.clearInstanceListeners(autocompleteInstance.current)
+        autocompleteInstance.current = null
+      }
+    }
+  }, [])
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (url.includes("zillow.com/homedetails")) {
-      console.log("Processing:", url)
-      fetchOGData(url)
+    if (!address) {
+      setError("Please select a valid address from the suggestions.")
+      return
     }
-  }
-
-  const handleContinue = () => {
-    setIsModalOpen(false)
-    localStorage.setItem("propertyUrl", url)
-    router.push("/upload-codebook")
+    localStorage.setItem("propertyAddress", address)
+    router.push("/report")
+    //router.push("/upload-codebook")
   }
 
   return (
@@ -89,30 +111,24 @@ export default function GetStarted() {
 
       <main className="container mx-auto px-4 flex flex-col items-center justify-center min-h-[80vh]">
         <div className="w-full max-w-md space-y-8">
-          <h1 className="text-2xl font-bold text-center">Enter your Zillow Property link to begin</h1>
+          <h1 className="text-2xl font-bold text-center">Enter your property address to begin</h1>
 
           <form onSubmit={handleSubmit} className="space-y-4">
             <Input
               type="text"
-              value={url}
-              onChange={(e) => setUrl(e.target.value)}
-              placeholder="https://www.zillow.com/homedetails/214-W-Chester-Dr-Ellettsville-IN-47429/85596655_zpid"
+              ref={autocompleteInput}
+              value={address}
+              onChange={(e) => setAddress(e.target.value)}
+              placeholder="Enter your property address"
               className="h-12 bg-white/5 border-white/10 text-white placeholder:text-gray-500"
             />
 
             <Button
               type="submit"
               className="w-full h-12 bg-orange-500 hover:bg-orange-600 text-white font-medium"
-              disabled={!url.includes("zillow.com/homedetails") || isLoading}
+              disabled={!address}
             >
-              {isLoading ? (
-                <div className="flex items-center gap-2">
-                  <div className="w-4 h-4 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-                  <span>Loading...</span>
-                </div>
-              ) : (
-                "Analyze Property"
-              )}
+              Analyze Property
             </Button>
           </form>
 
@@ -121,23 +137,8 @@ export default function GetStarted() {
               {error}
             </div>
           )}
-
-          {isLoading && (
-            <div className="mt-8 bg-white/5 rounded-lg p-8 flex flex-col items-center justify-center">
-              <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin mb-4" />
-              <p className="text-sm text-zinc-400">Fetching property details...</p>
-            </div>
-          )}
-
-          <PropertyConfirmationModal
-            isOpen={isModalOpen}
-            onClose={() => setIsModalOpen(false)}
-            onContinue={handleContinue}
-            ogData={ogData}
-          />
         </div>
       </main>
     </div>
   )
 }
-

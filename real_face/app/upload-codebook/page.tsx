@@ -4,10 +4,11 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
-import { S3Client, GetObjectCommand } from "@aws-sdk/client-s3"
-import { Upload } from "@aws-sdk/lib-storage"
+import { S3Client, GetObjectCommand, PutObjectCommand } from "@aws-sdk/client-s3"
 import { getSignedUrl } from "@aws-sdk/s3-request-presigner"
 import { Trash2 } from "lucide-react"
+import crc32 from "crc-32"
+
 
 const PDFIcon = () => (
   <svg
@@ -47,6 +48,12 @@ export default function UploadCodebook() {
     setError(null)
   
     try {
+      // Calculate checksum and get file buffer
+      const arrayBuffer = await file.arrayBuffer()
+      const buffer = Buffer.from(arrayBuffer)
+      const checksum = crc32.buf(new Uint8Array(arrayBuffer))
+      const checksumHex = (checksum >>> 0).toString(16).padStart(8, '0').toUpperCase()
+
       const client = new S3Client({
         region: process.env.NEXT_PUBLIC_AWS_REGION,
         credentials: {
@@ -56,31 +63,25 @@ export default function UploadCodebook() {
       })
       const timestamp = Date.now()
       const key = `codebooks/${timestamp}-${file.name}`
-      const upload = new Upload({
-        client,
-        params: {
-          Bucket: "municipalcodes",
-          Key: key,
-          Body: file,
-          ContentType: file.type,
-        },
+
+      const putCommand = new PutObjectCommand({
+        Bucket: "municipalcodes",
+        Key: key,
+        Body: buffer,
+        ContentType: file.type,
       })
-  
-      upload.on("httpUploadProgress", (progress) => {
-        if (progress.loaded && progress.total) {
-          setUploadProgress(Math.round((progress.loaded / progress.total) * 100))
-        }
-      })
-  
-      await upload.done()
+
+      await client.send(putCommand)
+      setUploadProgress(100)
       localStorage.setItem("uploadedPdfName", file.name)
   
-      const command = new GetObjectCommand({
+      const getCommand = new GetObjectCommand({
         Bucket: "municipalcodes",
         Key: key, 
       })
-      const signedUrl = await getSignedUrl(client, command, { expiresIn: 3600 })
-      
+      const signedUrl = await getSignedUrl(client, getCommand, { expiresIn: 3600 })
+      localStorage.setItem("signedUrl", signedUrl)
+
       const userId = localStorage.getItem("userId")
       if (!userId) {
         throw new Error("User ID not found")

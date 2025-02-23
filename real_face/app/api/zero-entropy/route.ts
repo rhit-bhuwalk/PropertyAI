@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { ZeroEntropy } from 'zeroentropy';
+import { v4 as uuidv4 } from 'uuid';
 
 // Initialize ZeroEntropy client
 const zeroEntropy = new ZeroEntropy({
@@ -72,7 +73,7 @@ async function handlePushCodebook(url: string, userId: string) {
     }
     await zeroEntropy.collections.add({ collection_name: userId });
    
-    const filename = url.split('/').pop() || 'document.pdf';
+    const filename = url.split('/').pop() || uuidv4() + ".pdf"
     const path = `${userId}_${filename}`;
     
     await zeroEntropy.documents.add({

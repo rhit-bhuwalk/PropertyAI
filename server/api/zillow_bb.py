@@ -1,93 +1,62 @@
 import asyncio
 import json
 import logging
-import random
 from playwright.async_api import async_playwright
-import agentql
+from browserbase import Browserbase
 
 logging.basicConfig(level=logging.DEBUG)
 log = logging.getLogger(__name__)
 
-# Define lists of user-agents, locations, and referers
-USER_AGENTS = [
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.4.1 Safari/605.1.15",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:130.0) Gecko/20100101 Firefox/130.0",
-]
+# Replace these with your actual Browserbase API key and project ID
+BROWSERBASE_API_KEY = "bb_live_D_nrgh5gVblt1jfFCkjKxU0eOcE"
+BROWSERBASE_PROJECT_ID = "cf5228a4-4788-4cba-8807-2608282a1cbe"
 
-# Each location is a tuple of (timezone, geolocation)
-LOCATIONS = [
-    ("America/New_York", {"longitude": -74.006, "latitude": 40.7128}),
-    ("America/Chicago", {"longitude": -87.6298, "latitude": 41.8781}),
-    ("America/Los_Angeles", {"longitude": -118.2437, "latitude": 34.0522}),
-    ("America/Denver", {"longitude": -104.9903, "latitude": 39.7392}),
-]
-
-REFERERS = ["https://www.google.com", "https://www.bing.com", "https://duckduckgo.com"]
+ZILLOW_URL = "https://www.zillow.com/homedetails/7823-Oak-Ct-Lino-Lakes-MN-55014/61271972_zpid/"
 
 async def prompt_user_to_solve_captcha(page) -> bool:
     """
-    Checks if a CAPTCHA is present by inspecting the page title.
-    If a CAPTCHA is detected, prompts the user in the terminal to
-    solve it manually. The user then confirms by pressing Enter.
+    If a CAPTCHA is detected, prompt the user to solve it manually.
     """
     log.info("CAPTCHA detected on the page.")
     log.info("Please solve the CAPTCHA manually in the open browser window, then press Enter in the terminal.")
-    # Wait for the user to press Enter.
-
     await asyncio.to_thread(input, "Press Enter once the CAPTCHA is solved: ")
-    log.info("User confirmed that the CAPTCHA is solved. Contsinuing...")
+    log.info("CAPTCHA solved, continuing...")
     await page.wait_for_timeout(3000)
     return True
 
-async def scrape_zillow_property(url: str) -> dict[str, any]:
+async def scrape_zillow_property(url: str) -> dict:
     """
-    Scrape a Zillow property page using Playwright with stealth mode.
-    If a CAPTCHA is detected, waits for the user to solve it manually.
-    Returns a dictionary with the page title and the extracted JSON (if found).
+    Scrape a Zillow property page using Browserbase's managed browser session.
     """
-    user_agent = random.choice(USER_AGENTS)
-    location = random.choice(LOCATIONS)
-    referer = random.choice(REFERERS)
-
+    # Initialize Browserbase and create a session
+    bb = Browserbase(api_key=BROWSERBASE_API_KEY)
+    session = bb.sessions.create(project_id=BROWSERBASE_PROJECT_ID)
+    
     async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=False,  # Non-headless so user can interact with CAPTCHA
-            args=["--disable-blink-features=AutomationControlled"]
-        )
-        context = await browser.new_context(
-            user_agent=user_agent,
-            geolocation=location[1],
-            locale="en-US,en",
-            timezone_id=location[0],
-            extra_http_headers={
-                "Accept-Language": "en-US,en;q=0.9",
-                "Referer": referer,
-                "DNT": "1",
-            },
-            permissions=["geolocation"],
-        )
-        page = await agentql.wrap_async(context.new_page())
-        await page.enable_stealth_mode(nav_user_agent=user_agent)
-
+        browser = await p.chromium.connect_over_cdp(session.connect_url)
+        context = browser.contexts[0]
+        if context.pages:
+            page = context.pages[0]
+        else:
+            page = await context.new_page()
+        
         log.info(f"Visiting {url}")
         await page.goto(url)
-        await page.wait_for_timeout(20000)  # Wait for initial page load
-
-        captcha_solved = await prompt_user_to_solve_captcha(page)
-        if not captcha_solved:
-            log.error("CAPTCHA was not solved. Exiting.")
-            await browser.close()
-            return {"url": url, "title": None, "json_data_found": False, "data_json": None}
-
+        await page.wait_for_timeout(20000)  # Wait for the page to load
+        
+        # Optional: Check for CAPTCHA based on page title (adjust condition as needed)
+        page_title = await page.title()
+        if "captcha" in page_title.lower():
+            await prompt_user_to_solve_captcha(page)
+        
         # Extract script contents from the page
         scripts = await page.evaluate(
-            '''() => {
+            """() => {
                 return Array.from(document.querySelectorAll("script"))
                     .map(script => script.textContent.trim());
-            }'''
+            }"""
         )
-
+        
         data_json = None
         for script in scripts:
             if "zpid" in script or "address" in script:
@@ -101,17 +70,17 @@ async def scrape_zillow_property(url: str) -> dict[str, any]:
                 except Exception as e:
                     log.error(f"Error parsing JSON: {e}")
                     continue
-
+        
         page_title = await page.title()
         await browser.close()
-
+        
         return {
             "url": url,
             "title": page_title,
             "json_data_found": data_json is not None,
             "data_json": data_json,
         }
-
+    
 def extract_data(json_file_path: str) -> list[dict]:
     """
     Extract property data from the JSON file saved by the scraper.
@@ -443,21 +412,17 @@ def extract_data(json_file_path: str) -> list[dict]:
             properties_data.append(property_data)
     return properties_data
 
+
 async def main():
-    zillow_url = "https://www.zillow.com/homedetails/6149-20th-Ave-NE-Hugo-MN-55038/444346054_zpid/"
-    scraped_data = await scrape_zillow_property(zillow_url)
+    scraped_data = await scrape_zillow_property(ZILLOW_URL)
     
-    if scraped_data:
-        print("Scraped data summary:")
-        print("Page title:", scraped_data["title"])
-        print("JSON data found:", scraped_data["json_data_found"])
-        
-        if scraped_data["json_data_found"]:
-            with open("scraped_data.json", "w") as json_file:
-                json.dump(scraped_data["data_json"], json_file, indent=2)
+    print("Scraped data summary:")
+    print("Page title:", scraped_data["title"])
+    print("JSON data found:", scraped_data["json_data_found"])
     
-    data = await asyncio.to_thread(extract_data, "scraped_data.json")
-    print(data[0])
+    if scraped_data["json_data_found"]:
+        with open("scraped_data.json", "w") as json_file:
+            json.dump(scraped_data["data_json"], json_file, indent=2)
 
 if __name__ == "__main__":
     asyncio.run(main())

@@ -38,7 +38,8 @@ class CodebookQuery(BaseModel):
 async def get_mls_data(request: ZillowRequest):
     try:
         scraped_data = await scrape_zillow_property(request.url)
-
+        print(request.url)
+        print(scraped_data)
         if not scraped_data or not scraped_data["json_data_found"]:
             raise HTTPException(status_code=404, detail="Failed to scrape data from Zillow URL")
 
