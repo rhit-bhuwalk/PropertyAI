@@ -59,8 +59,7 @@ export default function Report() {
         }
 
         const response_json = await response.json();
-        console.log("response_json");
-        console.log(response_json);
+
         setData(response_json as AttomProperty);
       } catch (err: any) {
         setError(err.message);
