@@ -46,7 +46,12 @@ export default function Report() {
         if (!address) {
           throw new Error("No property address found.");
         }
-        const response = await fetch("/api/mock-property-details", {
+
+        const apiEndpoint = process.env.NEXT_PUBLIC_API_ENV === 'test' 
+          ? '/api/mock-property-details'
+          : '/api/property-details';
+
+        const response = await fetch(apiEndpoint, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
