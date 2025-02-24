@@ -1,6 +1,5 @@
 import { NextResponse } from "next/server";
 import { MOCK_DETAIL_RESPONSE } from "./mockAttomResponses";
-
 export async function POST(request: Request) {
   try {
     const { address } = await request.json();
