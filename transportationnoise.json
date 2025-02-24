@@ -1,0 +1,64 @@
+{
+    "hazard": {
+        "transportationnoise": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "transactionID": "str"
+            },
+            "transportationNoise": {
+                "attomId": "int",
+                "lat": "float",
+                "lon": "float",
+                "road_noise": {
+                    "level": "int",
+                    "level_description": "str",
+                    "noise_sources": [
+                        {
+                            "source_type": "str",
+                            "source_sub_type": "str",
+                            "source_description": "str"
+                        }
+                    ]
+                },
+                "aviation_noise": {
+                    "level": "int",
+                    "level_description": "str"
+                },
+                "emg_vehicle_noise": {
+                    "level": "int",
+                    "level_description": "str",
+                    "noise_sources": [
+                        {
+                            "source_type": "str",
+                            "source_description": "str",
+                            "source_dist_km": "float"
+                        }
+                    ]
+                },
+                "rail_whistle_noise": {
+                    "level": "int",
+                    "level_description": "str",
+                    "noise_sources": []
+                },
+                "rail_noise": {
+                    "level": "int",
+                    "level_description": "str",
+                    "noise_sources": [
+                        {
+                            "source_type": "str",
+                            "source_sub_type": "str",
+                            "source_description": "str"
+                        }
+                    ]
+                },
+                "overall_summary": "str",
+                "disclaimer_text": "str"
+            }
+        }
+    }
+}

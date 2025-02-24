@@ -63,7 +63,7 @@ body {
 }
 
 @layer base {
-  :root {
+  .landing-page {
     --background: 0 0% 0%;
     --foreground: 0 0% 100%;
 
@@ -93,4 +93,15 @@ body {
 .dashboard-container {
   color: #431407; /* Assuming #1c1c1c is the equivalent of text-orange-950 */
 }
+
+
+
+/* @layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
 

@@ -1,0 +1,976 @@
+{
+    "property_value_insights_geo": {
+        "assessment/snapshot": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "responseDateTime": "str",
+                "transactionID": "str"
+            },
+            "property": [
+                {
+                    "identifier": {
+                        "Id": "int",
+                        "fips": "str",
+                        "apn": "str",
+                        "apnOrig": "NoneType",
+                        "attomId": "int"
+                    },
+                    "lot": {
+                        "lotSize1": "float"
+                    },
+                    "address": {
+                        "bldgName": "NoneType",
+                        "country": "str",
+                        "countrySubd": "str",
+                        "line1": "str",
+                        "line2": "str",
+                        "locality": "str",
+                        "matchCode": "str",
+                        "oneLine": "str",
+                        "postal1": "str",
+                        "postal2": "str",
+                        "postal3": "str"
+                    },
+                    "location": {
+                        "accuracy": "str",
+                        "elevation": "NoneType",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "distance": "float",
+                        "geoid": "str",
+                        "geoIdV4": {
+                            "CO": "str",
+                            "CS": "str",
+                            "DB": "str",
+                            "N4": "str",
+                            "SB": "str",
+                            "ZI": "str"
+                        }
+                    },
+                    "summary": {
+                        "propclass": "str",
+                        "propsubtype": "str",
+                        "proptype": "str",
+                        "propertyType": "str",
+                        "yearbuilt": "int",
+                        "propLandUse": "str",
+                        "propIndicator": "str"
+                    },
+                    "building": {
+                        "size": {
+                            "universalsize": "int"
+                        },
+                        "rooms": {
+                            "bathstotal": "float",
+                            "beds": "int"
+                        }
+                    },
+                    "vintage": {
+                        "lastModified": "str",
+                        "pubDate": "str"
+                    },
+                    "assessment": {
+                        "appraised": {
+                            "apprimprvalue": "NoneType",
+                            "apprlandvalue": "NoneType",
+                            "apprttlvalue": "NoneType"
+                        },
+                        "assessed": {
+                            "assdimprpersizeunit": "NoneType",
+                            "assdimprvalue": "NoneType",
+                            "assdlandpersizeunit": "NoneType",
+                            "assdlandvalue": "NoneType",
+                            "assdttlpersizeunit": "float",
+                            "assdttlvalue": "int"
+                        },
+                        "calculations": {
+                            "calcimprind": "str",
+                            "calcimprpersizeunit": "NoneType",
+                            "calcimprvalue": "NoneType",
+                            "calclandind": "str",
+                            "calclandpersizeunit": "NoneType",
+                            "calclandvalue": "NoneType",
+                            "calcttlind": "str",
+                            "calcttlvalue": "int",
+                            "calcvaluepersizeunit": "float"
+                        },
+                        "market": {
+                            "mktimprvalue": "NoneType",
+                            "mktlandvalue": "NoneType",
+                            "mktttlvalue": "int"
+                        },
+                        "tax": {
+                            "taxamt": "float",
+                            "taxpersizeunit": "float",
+                            "taxyear": "int"
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "property_value_insights_address": {
+        "assessment/detail": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "responseDateTime": "str",
+                "transactionID": "str",
+                "attomId": "int"
+            },
+            "property": [
+                {
+                    "identifier": {
+                        "Id": "int",
+                        "fips": "str",
+                        "apn": "str",
+                        "apnOrig": "NoneType",
+                        "attomId": "int"
+                    },
+                    "lot": {
+                        "depth": "int",
+                        "frontage": "int",
+                        "lotnum": "str",
+                        "lotsize1": "float",
+                        "lotsize2": "int",
+                        "lottype": "NoneType",
+                        "poolind": "NoneType",
+                        "pooltype": "str"
+                    },
+                    "area": {
+                        "blockNum": "NoneType",
+                        "loctype": "str",
+                        "countrysecsubd": "str",
+                        "countyuse1": "str",
+                        "muncode": "str",
+                        "munname": "str",
+                        "srvyRange": "NoneType",
+                        "srvySection": "NoneType",
+                        "srvyTownship": "NoneType",
+                        "subdname": "str",
+                        "subdtractnum": "NoneType",
+                        "taxcodearea": "str"
+                    },
+                    "address": {
+                        "bldgName": "NoneType",
+                        "country": "str",
+                        "countrySubd": "str",
+                        "line1": "str",
+                        "line2": "str",
+                        "locality": "str",
+                        "matchCode": "str",
+                        "oneLine": "str",
+                        "postal1": "str",
+                        "postal2": "str",
+                        "postal3": "str"
+                    },
+                    "location": {
+                        "accuracy": "str",
+                        "elevation": "NoneType",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "distance": "float",
+                        "geoid": "str",
+                        "geoIdV4": {
+                            "CO": "str",
+                            "CS": "str",
+                            "DB": "str",
+                            "N4": "str",
+                            "PL": "str",
+                            "SB": "str",
+                            "ZI": "str"
+                        }
+                    },
+                    "summary": {
+                        "absenteeInd": "str",
+                        "propclass": "str",
+                        "propsubtype": "str",
+                        "proptype": "str",
+                        "propertyType": "str",
+                        "yearbuilt": "int",
+                        "propLandUse": "str",
+                        "propIndicator": "str",
+                        "legal1": "str",
+                        "legal2": "NoneType",
+                        "legal3": "NoneType"
+                    },
+                    "utilities": {
+                        "coolingtype": "str",
+                        "energyType": "NoneType",
+                        "heatingfuel": "NoneType",
+                        "heatingtype": "str",
+                        "sewertype": "NoneType",
+                        "watertype": "NoneType"
+                    },
+                    "building": {
+                        "size": {
+                            "bldgsize": "int",
+                            "grosssize": "int",
+                            "grosssizeadjusted": "int",
+                            "groundfloorsize": "NoneType",
+                            "livingsize": "int",
+                            "sizeInd": "str",
+                            "universalsize": "int"
+                        },
+                        "rooms": {
+                            "bathfixtures": "int",
+                            "baths1qtr": "NoneType",
+                            "baths3qtr": "NoneType",
+                            "bathscalc": "NoneType",
+                            "bathsfull": "int",
+                            "bathshalf": "NoneType",
+                            "bathspartial": "int",
+                            "bathstotal": "float",
+                            "beds": "int",
+                            "roomsTotal": "int"
+                        },
+                        "interior": {
+                            "bsmtsize": "int",
+                            "bsmttype": "str",
+                            "floors": "NoneType",
+                            "fplccount": "NoneType",
+                            "fplcind": "NoneType",
+                            "fplctype": "NoneType"
+                        },
+                        "construction": {
+                            "condition": "str",
+                            "constructiontype": "str",
+                            "foundationtype": "NoneType",
+                            "frameType": "str",
+                            "roofcover": "NoneType",
+                            "roofShape": "NoneType",
+                            "wallType": "str"
+                        },
+                        "parking": {
+                            "garagetype": "NoneType",
+                            "prkgSize": "NoneType",
+                            "prkgSpaces": "NoneType",
+                            "prkgType": "NoneType"
+                        },
+                        "summary": {
+                            "archStyle": "str",
+                            "bldgsNum": "NoneType",
+                            "bldgType": "str",
+                            "imprType": "str",
+                            "levels": "int",
+                            "mobileHomeInd": "NoneType",
+                            "quality": "str",
+                            "storyDesc": "str",
+                            "unitsCount": "NoneType",
+                            "view": "str",
+                            "viewCode": "str",
+                            "yearbuilteffective": "NoneType"
+                        }
+                    },
+                    "vintage": {
+                        "lastModified": "str",
+                        "pubDate": "str"
+                    },
+                    "assessment": {
+                        "appraised": {
+                            "apprimprvalue": "NoneType",
+                            "apprlandvalue": "NoneType",
+                            "apprttlvalue": "NoneType"
+                        },
+                        "assessed": {
+                            "assdimprpersizeunit": "float",
+                            "assdimprvalue": "int",
+                            "assdlandpersizeunit": "float",
+                            "assdlandvalue": "int",
+                            "assdttlpersizeunit": "float",
+                            "assdttlvalue": "int"
+                        },
+                        "calculations": {
+                            "calcimprind": "str",
+                            "calcimprpersizeunit": "float",
+                            "calcimprvalue": "int",
+                            "calclandind": "str",
+                            "calclandpersizeunit": "float",
+                            "calclandvalue": "int",
+                            "calcttlind": "str",
+                            "calcttlvalue": "int",
+                            "calcvaluepersizeunit": "float"
+                        },
+                        "market": {
+                            "mktimprvalue": "NoneType",
+                            "mktlandvalue": "NoneType",
+                            "mktttlvalue": "NoneType"
+                        },
+                        "tax": {
+                            "taxamt": "float",
+                            "taxpersizeunit": "float",
+                            "taxyear": "int"
+                        }
+                    }
+                }
+            ]
+        },
+        "attomavm/detail": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "responseDateTime": "str",
+                "transactionID": "str",
+                "attomId": "int"
+            },
+            "echoed_fields": {
+                "jobID": "str",
+                "loanNumber": "str",
+                "preparedBy": "str",
+                "resellerID": "str",
+                "preparedFor": "str"
+            },
+            "property": [
+                {
+                    "identifier": {
+                        "Id": "int",
+                        "fips": "str",
+                        "apn": "str",
+                        "attomId": "int"
+                    },
+                    "lot": {
+                        "depth": "int",
+                        "frontage": "int",
+                        "lotsize1": "float",
+                        "lotsize2": "int"
+                    },
+                    "area": {
+                        "countrysecsubd": "str"
+                    },
+                    "address": {
+                        "bldgName": "NoneType",
+                        "country": "str",
+                        "countrySubd": "str",
+                        "line1": "str",
+                        "line2": "str",
+                        "locality": "str",
+                        "matchCode": "str",
+                        "oneLine": "str",
+                        "postal1": "str",
+                        "postal2": "str",
+                        "postal3": "str"
+                    },
+                    "location": {
+                        "accuracy": "str",
+                        "elevation": "NoneType",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "distance": "float",
+                        "geoid": "str",
+                        "geoIdV4": {
+                            "CO": "str",
+                            "CS": "str",
+                            "DB": "str",
+                            "N4": "str",
+                            "PL": "str",
+                            "SB": "str",
+                            "ZI": "str"
+                        }
+                    },
+                    "summary": {
+                        "absenteeInd": "str",
+                        "propclass": "str",
+                        "propsubtype": "str",
+                        "proptype": "str",
+                        "propertyType": "str",
+                        "yearbuilt": "int",
+                        "propLandUse": "str",
+                        "propIndicator": "str",
+                        "legal1": "str"
+                    },
+                    "utilities": {
+                        "coolingtype": "str",
+                        "energytype": "NoneType",
+                        "heatingfuel": "NoneType",
+                        "heatingtype": "str",
+                        "sewertype": "NoneType",
+                        "walltype": "str"
+                    },
+                    "building": {
+                        "size": {
+                            "bldgsize": "int",
+                            "grosssize": "int",
+                            "grosssizeadjusted": "int",
+                            "groundfloorsize": "NoneType",
+                            "livingsize": "int",
+                            "sizeInd": "str",
+                            "universalsize": "int"
+                        },
+                        "rooms": {
+                            "bathstotal": "float",
+                            "beds": "int",
+                            "roomsTotal": "int"
+                        },
+                        "interior": {
+                            "bsmtsize": "int",
+                            "bsmttype": "str",
+                            "fplccount": "NoneType",
+                            "fplcind": "NoneType",
+                            "fplctype": "NoneType"
+                        },
+                        "parking": {
+                            "prkgSize": "NoneType",
+                            "prkgType": "NoneType"
+                        },
+                        "summary": {
+                            "levels": "int",
+                            "storyDesc": "str",
+                            "unitsCount": "NoneType"
+                        }
+                    },
+                    "avm": {
+                        "eventDate": "str",
+                        "amount": {
+                            "scr": "int",
+                            "value": "int",
+                            "high": "int",
+                            "low": "int",
+                            "fsd": "float"
+                        }
+                    },
+                    "sale": {
+                        "buyerName": "str",
+                        "multiAPNflag": "NoneType",
+                        "sellerName": "str",
+                        "sellercarryback": "NoneType",
+                        "salesearchdate": "str",
+                        "saleTransDate": "str",
+                        "mortgage": {
+                            "FirstConcurrent": {
+                                "trustDeedDocumentNumber": "str",
+                                "amount": "int"
+                            },
+                            "SecondConcurrent": {
+                                "trustDeedDocumentNumber": "NoneType",
+                                "amount": "NoneType"
+                            }
+                        },
+                        "amount": {
+                            "saleamt": "int",
+                            "salecode": "NoneType",
+                            "salerecdate": "str",
+                            "saledisclosuretype": "int",
+                            "saledoctype": "NoneType",
+                            "saledocnum": "str",
+                            "saletranstype": "str"
+                        },
+                        "calculation": {
+                            "priceperbed": "int",
+                            "pricepersizeunit": "float"
+                        }
+                    },
+                    "assessment": {
+                        "assessed": {
+                            "assdttlvalue": "int"
+                        },
+                        "market": {
+                            "mktttlvalue": "NoneType",
+                            "mktlandvalue": "NoneType"
+                        }
+                    },
+                    "owner": {
+                        "corporateindicator": "str",
+                        "owner1": {
+                            "fullname": "str",
+                            "lastname": "str",
+                            "firstnameandmi": "str"
+                        },
+                        "owner2": {
+                            "fullname": "NoneType",
+                            "lastname": "NoneType",
+                            "firstnameandmi": "NoneType"
+                        },
+                        "owner3": {
+                            "fullname": "NoneType",
+                            "lastname": "NoneType",
+                            "firstnameandmi": "NoneType"
+                        },
+                        "owner4": {
+                            "fullname": "NoneType",
+                            "lastname": "NoneType",
+                            "firstnameandmi": "NoneType"
+                        },
+                        "absenteeownerstatus": "str",
+                        "mailingaddressoneline": "str"
+                    },
+                    "vintage": {
+                        "lastModified": "str",
+                        "pubDate": "str"
+                    }
+                }
+            ]
+        },
+        "avmhistory/detail": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "responseDateTime": "str",
+                "transactionID": "str",
+                "attomId": "int"
+            },
+            "property": [
+                {
+                    "identifier": {
+                        "Id": "int",
+                        "fips": "str",
+                        "apn": "str",
+                        "attomId": "int"
+                    },
+                    "lot": {
+                        "depth": "int",
+                        "frontage": "int",
+                        "lotSize1": "float",
+                        "lotSize2": "int"
+                    },
+                    "area": {
+                        "countrySecSubd": "str"
+                    },
+                    "address": {
+                        "bldgName": "NoneType",
+                        "country": "str",
+                        "countrySubd": "str",
+                        "line1": "str",
+                        "line2": "str",
+                        "locality": "str",
+                        "matchCode": "str",
+                        "oneLine": "str",
+                        "postal1": "str",
+                        "postal2": "str",
+                        "postal3": "str"
+                    },
+                    "location": {
+                        "accuracy": "str",
+                        "elevation": "NoneType",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "distance": "float",
+                        "geoId": "str",
+                        "geoIdV4": {
+                            "CO": "str",
+                            "CS": "str",
+                            "DB": "str",
+                            "N4": "str",
+                            "PL": "str",
+                            "SB": "str",
+                            "ZI": "str"
+                        }
+                    },
+                    "summary": {
+                        "absenteeInd": "str",
+                        "propClass": "str",
+                        "propSubType": "str",
+                        "propType": "str",
+                        "propertyType": "str",
+                        "yearBuilt": "int",
+                        "propLandUse": "str",
+                        "propIndicator": "str",
+                        "legal1": "str"
+                    },
+                    "utilities": {
+                        "coolingType": "str",
+                        "energyType": "NoneType",
+                        "heatingFuel": "NoneType",
+                        "heatingType": "str",
+                        "sewerType": "NoneType",
+                        "wallType": "NoneType"
+                    },
+                    "building": {
+                        "size": {
+                            "bldgSize": "int",
+                            "grossSize": "int",
+                            "grossSizeAdjusted": "int",
+                            "groundFloorSize": "NoneType",
+                            "livingSize": "int",
+                            "sizeInd": "str",
+                            "universalSize": "int"
+                        },
+                        "rooms": {
+                            "bathsTotal": "float",
+                            "beds": "int",
+                            "roomsTotal": "int"
+                        },
+                        "interior": {
+                            "bsmtSize": "int",
+                            "bsmtType": "str",
+                            "fplcCount": "NoneType",
+                            "fplcInd": "NoneType",
+                            "fplcType": "NoneType"
+                        },
+                        "parking": {
+                            "prkgSize": "NoneType",
+                            "prkgType": "NoneType"
+                        },
+                        "summary": {
+                            "levels": "int",
+                            "storyDesc": "str",
+                            "unitsCount": "NoneType"
+                        }
+                    },
+                    "sale": {
+                        "buyerName": "str",
+                        "multiAPNflag": "NoneType",
+                        "sellerName": "str",
+                        "sellerCarryback": "NoneType",
+                        "saleSearchDate": "str",
+                        "saleTransDate": "str",
+                        "mortgage": {
+                            "FirstConcurrent": {
+                                "trustDeedDocumentNumber": "str",
+                                "amount": "int"
+                            },
+                            "SecondConcurrent": {
+                                "trustDeedDocumentNumber": "NoneType",
+                                "amount": "NoneType"
+                            }
+                        },
+                        "amount": {
+                            "saleAmt": "int",
+                            "saleCode": "NoneType",
+                            "saleRecDate": "str",
+                            "saleDisclosureType": "int",
+                            "saleDocType": "NoneType",
+                            "saleDocNum": "str",
+                            "saleTransType": "str"
+                        },
+                        "calculation": {
+                            "pricePerBed": "int",
+                            "pricePerSizeUnit": "float"
+                        }
+                    },
+                    "assessment": {
+                        "assessed": {
+                            "assdTtlValue": "int"
+                        },
+                        "market": {
+                            "mktTtlValue": "NoneType",
+                            "mktLandValue": "NoneType"
+                        }
+                    },
+                    "owner": {
+                        "corporateIndicator": "str",
+                        "owner1": {
+                            "fullname": "str",
+                            "lastName": "str",
+                            "firstNameAndMi": "str"
+                        },
+                        "owner2": {
+                            "fullname": "str",
+                            "lastName": "NoneType",
+                            "firstNameAndMi": "NoneType"
+                        },
+                        "owner3": {
+                            "fullname": "str",
+                            "lastName": "NoneType",
+                            "firstNameAndMi": "NoneType"
+                        },
+                        "owner4": {
+                            "fullname": "str",
+                            "lastName": "NoneType",
+                            "firstNameAndMi": "NoneType"
+                        },
+                        "absenteeOwnerStatus": "str",
+                        "mailingAddressOneLine": "str"
+                    },
+                    "echoed_fields": "NoneType",
+                    "vintage": {
+                        "lastModified": "str",
+                        "pubDate": "str"
+                    },
+                    "avmhistory": [
+                        {
+                            "eventDate": "str",
+                            "amount": {
+                                "scr": "int",
+                                "value": "int",
+                                "high": "int",
+                                "low": "int",
+                                "fsd": "float"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "valuation/homeequity": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "responseDateTime": "str",
+                "transactionID": "str",
+                "attomId": "int"
+            },
+            "property": [
+                {
+                    "identifier": {
+                        "Id": "int",
+                        "fips": "str",
+                        "apn": "str",
+                        "apnOrig": "NoneType",
+                        "attomId": "int"
+                    },
+                    "lot": {
+                        "lotSize1": "float"
+                    },
+                    "address": {
+                        "bldgName": "NoneType",
+                        "country": "str",
+                        "countrySubd": "str",
+                        "line1": "str",
+                        "line2": "str",
+                        "locality": "str",
+                        "matchCode": "str",
+                        "oneLine": "str",
+                        "postal1": "str",
+                        "postal2": "str",
+                        "postal3": "str"
+                    },
+                    "location": {
+                        "accuracy": "str",
+                        "elevation": "NoneType",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "distance": "float",
+                        "geoId": "str",
+                        "geoIdV4": {
+                            "CO": "str",
+                            "CS": "str",
+                            "DB": "str",
+                            "N4": "str",
+                            "PL": "str",
+                            "SB": "str",
+                            "ZI": "str"
+                        }
+                    },
+                    "summary": {
+                        "propClass": "str",
+                        "propSubType": "str",
+                        "propType": "str",
+                        "propertyType": "str",
+                        "yearBuilt": "int",
+                        "propLandUse": "str",
+                        "propIndicator": "str"
+                    },
+                    "building": {
+                        "size": {
+                            "universalSize": "int"
+                        },
+                        "rooms": {
+                            "bathsTotal": "float",
+                            "beds": "int"
+                        }
+                    },
+                    "vintage": {
+                        "lastModified": "str",
+                        "pubDate": "str"
+                    },
+                    "avm": {
+                        "eventDate": "str",
+                        "amount": {
+                            "scr": "int",
+                            "value": "int",
+                            "high": "int",
+                            "low": "int",
+                            "valueRange": "int"
+                        },
+                        "calculations": {
+                            "perSizeUnit": "float",
+                            "ratioTaxAmt": "float",
+                            "ratioTaxValue": "NoneType",
+                            "monthlyChgPct": "NoneType",
+                            "monthlyChgValue": "NoneType",
+                            "rangePctOfValue": "float"
+                        }
+                    },
+                    "homeEquity": {
+                        "LTV": "int",
+                        "estimatedAvailableEquity": "int",
+                        "estimatedLendableEquity": "int",
+                        "firstAmortizedLoanAmount": "int",
+                        "secondAmortizedLoanAmount": "int",
+                        "thirdAmortizedLoanAmount": "int",
+                        "totalEstimatedLoanBalance": "int",
+                        "recordLastUpdated": "str"
+                    }
+                }
+            ]
+        },
+        "valuation/rentalavm": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "responseDateTime": "str",
+                "transactionID": "str",
+                "attomId": "int"
+            },
+            "property": [
+                {
+                    "identifier": {
+                        "Id": "int",
+                        "fips": "str",
+                        "apn": "str",
+                        "attomId": "int"
+                    },
+                    "lot": {
+                        "depth": "int",
+                        "frontage": "int",
+                        "lotsize1": "float",
+                        "lotsize2": "int"
+                    },
+                    "area": {
+                        "countrysecsubd": "str"
+                    },
+                    "address": {
+                        "bldgName": "NoneType",
+                        "country": "str",
+                        "countrySubd": "str",
+                        "line1": "str",
+                        "line2": "str",
+                        "locality": "str",
+                        "matchCode": "str",
+                        "oneLine": "str",
+                        "postal1": "str",
+                        "postal2": "str",
+                        "postal3": "str"
+                    },
+                    "location": {
+                        "accuracy": "str",
+                        "elevation": "NoneType",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "distance": "float",
+                        "geoid": "str",
+                        "geoIdV4": {
+                            "CO": "str",
+                            "CS": "str",
+                            "DB": "str",
+                            "N4": "str",
+                            "PL": "str",
+                            "SB": "str",
+                            "ZI": "str"
+                        }
+                    },
+                    "summary": {
+                        "absenteeInd": "str",
+                        "propclass": "str",
+                        "propsubtype": "str",
+                        "proptype": "str",
+                        "propertyType": "str",
+                        "yearbuilt": "int",
+                        "propLandUse": "str",
+                        "propIndicator": "str",
+                        "legal1": "NoneType"
+                    },
+                    "utilities": {
+                        "coolingtype": "str",
+                        "energytype": "NoneType",
+                        "heatingfuel": "NoneType",
+                        "heatingtype": "str",
+                        "sewertype": "NoneType",
+                        "walltype": "NoneType"
+                    },
+                    "building": {
+                        "size": {
+                            "bldgsize": "int",
+                            "grosssize": "int",
+                            "grosssizeadjusted": "int",
+                            "groundfloorsize": "NoneType",
+                            "livingsize": "int",
+                            "sizeInd": "str",
+                            "universalsize": "int"
+                        },
+                        "rooms": {
+                            "bathstotal": "float",
+                            "beds": "int",
+                            "roomsTotal": "int"
+                        },
+                        "interior": {
+                            "bsmtsize": "int",
+                            "bsmttype": "str",
+                            "fplccount": "NoneType",
+                            "fplcind": "NoneType",
+                            "fplctype": "NoneType"
+                        },
+                        "parking": {
+                            "prkgSize": "NoneType",
+                            "prkgType": "NoneType"
+                        },
+                        "summary": {
+                            "levels": "int",
+                            "storyDesc": "str",
+                            "unitsCount": "NoneType"
+                        }
+                    },
+                    "rentalAvm": {
+                        "estimatedRentalValue": "int",
+                        "estimatedMinRentalValue": "int",
+                        "estimatedMaxRentalValue": "int",
+                        "valuationDate": "str"
+                    },
+                    "assessment": {
+                        "assessed": {
+                            "assdttlvalue": "int"
+                        },
+                        "market": {
+                            "mktttlvalue": "NoneType",
+                            "mktlandvalue": "NoneType"
+                        }
+                    },
+                    "owner": {
+                        "corporateindicator": "NoneType",
+                        "owner1": {
+                            "fullname": "str",
+                            "lastname": "str",
+                            "firstnameandmi": "str"
+                        },
+                        "owner2": {
+                            "fullname": "NoneType",
+                            "lastname": "NoneType",
+                            "firstnameandmi": "NoneType"
+                        },
+                        "owner3": {
+                            "fullname": "NoneType",
+                            "lastname": "NoneType",
+                            "firstnameandmi": "NoneType"
+                        },
+                        "owner4": {
+                            "fullname": "NoneType",
+                            "lastname": "NoneType",
+                            "firstnameandmi": "NoneType"
+                        },
+                        "absenteeownerstatus": "str",
+                        "mailingaddressoneline": "str"
+                    },
+                    "vintage": {
+                        "lastModified": "str",
+                        "pubDate": "str"
+                    }
+                }
+            ]
+        }
+    }
+}

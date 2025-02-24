@@ -1,0 +1,36 @@
+{
+    "v4": {
+        "transaction/salestrend": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pageSize": "int",
+                "transactionID": "str"
+            },
+            "salesTrends": [
+                {
+                    "location": {
+                        "geoIdV4": "str",
+                        "geographyName": "str"
+                    },
+                    "dateRange": {
+                        "interval": "str",
+                        "start": "str",
+                        "end": "str"
+                    },
+                    "salesTrend": {
+                        "homeSaleCount": "int",
+                        "avgSalePrice": "int",
+                        "medSalePrice": "int"
+                    },
+                    "vintage": {
+                        "pubDate": "str"
+                    }
+                }
+            ]
+        }
+    }
+}

@@ -1,5 +1,4 @@
 "use client"
-import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import Link from "next/link"
 import Image from "next/image"
@@ -39,7 +38,7 @@ export default function Home() {
   }, [])
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col opacity-0 animate-fade-in">
+    <div className="landing-page min-h-screen bg-black text-white flex flex-col opacity-0 animate-fade-in">
       <header className="container mx-auto px-4 py-6 flex justify-between items-center fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 bg-white/10 rounded flex items-center justify-center">
@@ -82,9 +81,9 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <CalendarButton />
-              <Link href="/get-started">
+              <Link href="/demo">
                 <AnimatedGradientButton className="bg-orange-500 hover:bg-orange-600 text-white px-12 py-6 text-lg font-semibold transition-colors duration-300">
-                  Get Started
+                  Demo
                 </AnimatedGradientButton>
               </Link>
             </div>

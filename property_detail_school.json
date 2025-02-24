@@ -1,0 +1,191 @@
+{
+    "school_detail_property": {
+        "detailwithschools": {
+            "status": {
+                "version": "str",
+                "code": "int",
+                "msg": "str",
+                "total": "int",
+                "page": "int",
+                "pagesize": "int",
+                "responseDateTime": "str",
+                "transactionID": "str",
+                "attomId": "int"
+            },
+            "property": [
+                {
+                    "identifier": {
+                        "Id": "int",
+                        "fips": "str",
+                        "apn": "str",
+                        "apnOrig": "NoneType",
+                        "attomId": "int"
+                    },
+                    "lot": {
+                        "depth": "NoneType",
+                        "frontage": "NoneType",
+                        "lotnum": "str",
+                        "lotsize1": "float",
+                        "lotsize2": "int",
+                        "lottype": "NoneType",
+                        "poolind": "NoneType",
+                        "pooltype": "str"
+                    },
+                    "area": {
+                        "blockNum": "str",
+                        "loctype": "str",
+                        "countrysecsubd": "str",
+                        "countyuse1": "str",
+                        "muncode": "str",
+                        "munname": "str",
+                        "srvyRange": "str",
+                        "srvySection": "str",
+                        "srvyTownship": "str",
+                        "subdname": "str",
+                        "subdtractnum": "NoneType",
+                        "taxcodearea": "str"
+                    },
+                    "address": {
+                        "bldgName": "NoneType",
+                        "country": "str",
+                        "countrySubd": "str",
+                        "line1": "str",
+                        "line2": "str",
+                        "locality": "str",
+                        "matchCode": "str",
+                        "oneLine": "str",
+                        "postal1": "str",
+                        "postal2": "str",
+                        "postal3": "str"
+                    },
+                    "location": {
+                        "accuracy": "str",
+                        "elevation": "NoneType",
+                        "latitude": "str",
+                        "longitude": "str",
+                        "distance": "float",
+                        "geoid": "str",
+                        "geoIdV4": {
+                            "CO": "str",
+                            "CS": "str",
+                            "DB": "str",
+                            "N1": "str",
+                            "N2": "str",
+                            "PL": "str",
+                            "SB": "str",
+                            "ZI": "str"
+                        }
+                    },
+                    "summary": {
+                        "absenteeInd": "str",
+                        "propclass": "str",
+                        "propsubtype": "str",
+                        "proptype": "str",
+                        "yearbuilt": "int",
+                        "propLandUse": "str",
+                        "propIndicator": "str",
+                        "legal1": "str",
+                        "legal2": "NoneType",
+                        "legal3": "NoneType"
+                    },
+                    "utilities": {
+                        "coolingtype": "NoneType",
+                        "energyType": "NoneType",
+                        "heatingfuel": "str",
+                        "heatingtype": "str",
+                        "sewertype": "NoneType",
+                        "waterType": "NoneType"
+                    },
+                    "building": {
+                        "size": {
+                            "bldgsize": "int",
+                            "grosssize": "int",
+                            "grosssizeadjusted": "int",
+                            "groundfloorsize": "int",
+                            "livingsize": "int",
+                            "sizeInd": "str",
+                            "universalsize": "int"
+                        },
+                        "rooms": {
+                            "bathfixtures": "int",
+                            "baths1qtr": "NoneType",
+                            "baths3qtr": "NoneType",
+                            "bathscalc": "NoneType",
+                            "bathsfull": "int",
+                            "bathshalf": "NoneType",
+                            "bathspartial": "NoneType",
+                            "bathstotal": "float",
+                            "beds": "int",
+                            "roomsTotal": "int"
+                        },
+                        "interior": {
+                            "bsmtsize": "int",
+                            "bsmttype": "NoneType",
+                            "floors": "NoneType",
+                            "fplccount": "int",
+                            "fplcind": "str",
+                            "fplctype": "str"
+                        },
+                        "construction": {
+                            "condition": "str",
+                            "constructiontype": "NoneType",
+                            "foundationtype": "NoneType",
+                            "frameType": "NoneType",
+                            "roofcover": "NoneType",
+                            "roofShape": "NoneType",
+                            "wallType": "str"
+                        },
+                        "parking": {
+                            "garagetype": "str",
+                            "prkgSize": "int",
+                            "prkgSpaces": "NoneType",
+                            "prkgType": "str"
+                        },
+                        "summary": {
+                            "archStyle": "str",
+                            "bldgsNum": "NoneType",
+                            "bldgType": "NoneType",
+                            "imprType": "NoneType",
+                            "levels": "int",
+                            "mobileHomeInd": "NoneType",
+                            "quality": "str",
+                            "storyDesc": "NoneType",
+                            "unitsCount": "str",
+                            "view": "str",
+                            "yearbuilteffective": "int"
+                        }
+                    },
+                    "schoolDistrict": {
+                        "Obdistrictnumber": "NoneType",
+                        "geoIdV4": "str",
+                        "districttype": "str",
+                        "districtname": "str",
+                        "districtlatitude": "str",
+                        "districtlongitude": "str"
+                    },
+                    "school": [
+                        {
+                            "OBInstID": "NoneType",
+                            "geoIdV4": "str",
+                            "InstitutionName": "str",
+                            "GSTestRating": "int",
+                            "schoolRating": "str",
+                            "gradelevel1lotext": "str",
+                            "gradelevel1hitext": "str",
+                            "lowAssignedGrade": "str",
+                            "highAssignedGrade": "str",
+                            "Filetypetext": "str",
+                            "geocodinglatitude": "str",
+                            "geocodinglongitude": "str",
+                            "distance": "float"
+                        }
+                    ],
+                    "vintage": {
+                        "lastModified": "str",
+                        "pubDate": "str"
+                    }
+                }
+            ]
+        }
+    }
+}
