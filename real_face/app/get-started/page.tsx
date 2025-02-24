@@ -43,7 +43,6 @@ export default function GetStarted() {
       localStorage.setItem("userId", userId)
     }
 
-    // Initialize Google Places Autocomplete
     const initializeAutocomplete = () => {
       if (autocompleteInput.current && window.google?.maps?.places) {
         autocompleteInstance.current = new window.google.maps.places.Autocomplete(
