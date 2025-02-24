@@ -69,3 +69,4 @@ coverage/
 .cache/
 .cache-loader/
 *.bak
+.vercel
