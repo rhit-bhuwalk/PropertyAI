@@ -7,22 +7,6 @@ import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { v4 as uuidv4 } from "uuid"
 
-// Declare Google Maps types
-declare global {
-  interface Window {
-    google: {
-      maps: {
-        places: {
-          Autocomplete: typeof google.maps.places.Autocomplete
-        }
-        event: {
-          clearInstanceListeners(instance: any): void
-        }
-      }
-    }
-  }
-}
-
 // Helper to load Google Maps script
 const loadGoogleMapsScript = (callback: () => void) => {
   const existingScript = document.getElementById('google-maps-script')
@@ -80,7 +64,7 @@ export default function GetStarted() {
     }
     loadGoogleMapsScript(initializeAutocomplete)
     return () => {
-      if (autocompleteInstance.current) {
+      if (autocompleteInstance.current && window.google?.maps?.event) {
         window.google.maps.event.clearInstanceListeners(autocompleteInstance.current)
         autocompleteInstance.current = null
       }
@@ -95,7 +79,6 @@ export default function GetStarted() {
     }
     localStorage.setItem("propertyAddress", address)
     router.push("/report")
-    //router.push("/upload-codebook")
   }
 
   return (

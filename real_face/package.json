@@ -40,5 +40,8 @@
     "typescript": "5.1.6",
     "uuid": "^11.0.5",
     "zeroentropy": "^0.1.0-alpha.2"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.58.1"
   }
 }
