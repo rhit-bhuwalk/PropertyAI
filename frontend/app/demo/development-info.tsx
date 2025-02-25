@@ -7,8 +7,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 export default function DevelopmentInfo() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-50 to-zinc-100/50">
-      <div className="container mx-auto p-8 max-w-7xl">
+    <div className="min-h-screen">
+      <div className="container mx-auto max-w-7xl">
         <div className="space-y-16">
           <Accordion type="multiple" className="space-y-6">
             {/* Zoning & Use Parameters */}
@@ -71,7 +71,7 @@ export default function DevelopmentInfo() {
                         <ul className="space-y-2 text-muted-foreground">
                           <li>Lot coverage: 60-85% in urban zones</li>
                           <li>15-25% permeable surface requirements</li>
-                          <li>FAR restrictions on floorplates above 85'</li>
+                          <li>FAR restrictions on floorplates above 85&apos;</li>
                         </ul>
                       </div>
                     </div>
