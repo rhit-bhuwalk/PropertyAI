@@ -52,7 +52,7 @@ export default function PropertyReport() {
                             <div>
                               <p className="font-medium">Zoning Classification</p>
                               <p className="text-muted-foreground">C-4 (Commercial Mixed-Use)</p>
-                              <p className="text-muted-foreground">FAR 5:1 with 85' height limit</p>
+                              <p className="text-muted-foreground">FAR 5:1 with 85&apos; height limit</p>
                             </div>
                             <div>
                               <p className="font-medium">Overlay Districts</p>
@@ -105,11 +105,11 @@ export default function PropertyReport() {
                             <dl className="grid grid-cols-1 md:grid-cols-2 gap-4">
                               <div>
                                 <dt className="text-muted-foreground">Frontage</dt>
-                                <dd>307' (Market Street)</dd>
+                                <dd>307&apos; (Market Street)</dd>
                               </div>
                               <div>
                                 <dt className="text-muted-foreground">Depth</dt>
-                                <dd>264'</dd>
+                                <dd>264&apos;</dd>
                               </div>
                               <div>
                                 <dt className="text-muted-foreground">Gross Area</dt>
@@ -125,7 +125,7 @@ export default function PropertyReport() {
                           <div>
                             <h3 className="font-medium mb-2">Topographical Profile</h3>
                             <p className="text-muted-foreground">2.8% grade slope NW to SE</p>
-                            <p className="text-muted-foreground">8.3' elevation differential</p>
+                            <p className="text-muted-foreground">8.3&apos; elevation differential</p>
                             <p className="text-muted-foreground">Class C clay soil (3,500 psf bearing capacity)</p>
                           </div>
                         </div>
@@ -141,8 +141,8 @@ export default function PropertyReport() {
                           <div>
                             <h3 className="font-medium mb-2">Recorded Easements</h3>
                             <ul className="space-y-2 text-muted-foreground">
-                              <li>20' utility easement along eastern boundary</li>
-                              <li>Public right-of-way (15' from curb line)</li>
+                              <li>20&apos; utility easement along eastern boundary</li>
+                              <li>Public right-of-way (15&apos; from curb line)</li>
                               <li>Shared driveway agreement with adjacent parcel</li>
                             </ul>
                           </div>
@@ -150,7 +150,7 @@ export default function PropertyReport() {
                           <div>
                             <h3 className="font-medium mb-2">Deed Restrictions</h3>
                             <ul className="space-y-2 text-muted-foreground">
-                              <li>Height restriction covenant (max 120')</li>
+                              <li>Height restriction covenant (max 120&apos;)</li>
                               <li>Use restriction: No heavy industrial</li>
                               <li>Setback requirements from historic façade</li>
                             </ul>
@@ -183,11 +183,11 @@ export default function PropertyReport() {
                               </div>
                               <div>
                                 <dt className="text-muted-foreground">Clear Heights</dt>
-                                <dd>14' ground floor, 11' upper floors</dd>
+                                <dd>14&apos; ground floor, 11&apos; upper floors</dd>
                               </div>
                               <div>
                                 <dt className="text-muted-foreground">Elevators</dt>
-                                <dd>2 Otis Gen2® units (2018)</dd>
+                                <dd>2 Otis Gen2&reg; units (2018)</dd>
                               </div>
                             </dl>
                           </div>
@@ -224,11 +224,11 @@ export default function PropertyReport() {
                               </div>
                               <div>
                                 <dt className="text-muted-foreground">Height Limit</dt>
-                                <dd>85' base / 120' with bonuses</dd>
+                                <dd>85&apos; base / 120&apos; with bonuses</dd>
                               </div>
                               <div>
                                 <dt className="text-muted-foreground">Setbacks</dt>
-                                <dd>0' front, 10' side/rear</dd>
+                                <dd>0&apos; front, 10&apos; side/rear</dd>
                               </div>
                               <div>
                                 <dt className="text-muted-foreground">Parking Ratio</dt>
@@ -241,7 +241,7 @@ export default function PropertyReport() {
                             <h3 className="font-medium mb-2">Available Bonuses</h3>
                             <ul className="space-y-2 text-muted-foreground">
                               <li>20% FAR bonus for public plaza</li>
-                              <li>35' height bonus for LEED Gold</li>
+                              <li>35&apos; height bonus for LEED Gold</li>
                               <li>Parking reduction (transit overlay)</li>
                             </ul>
                           </div>
@@ -278,21 +278,21 @@ export default function PropertyReport() {
                                 <TableRow>
                                   <TableCell>Building Permit</TableCell>
                                   <TableCell>
-                                    <Badge variant="warning">Pending</Badge>
+                                    <Badge variant="destructive">Pending</Badge>
                                   </TableCell>
                                   <TableCell>4-6 months</TableCell>
                                 </TableRow>
                                 <TableRow>
                                   <TableCell>Demolition Permit</TableCell>
                                   <TableCell>
-                                    <Badge variant="success">Approved</Badge>
+                                    <Badge variant="destructive">Approved</Badge>
                                   </TableCell>
                                   <TableCell>Valid through 2025</TableCell>
                                 </TableRow>
                                 <TableRow>
                                   <TableCell>Site Plan Review</TableCell>
                                   <TableCell>
-                                    <Badge>In Review</Badge>
+                                    <Badge variant="destructive">In Review</Badge>
                                   </TableCell>
                                   <TableCell>2-3 months</TableCell>
                                 </TableRow>
@@ -325,13 +325,13 @@ export default function PropertyReport() {
                         <div className="space-y-4">
                           <div>
                             <h3 className="font-medium mb-2">Foundation</h3>
-                            <p className="text-muted-foreground">Original 1927 concrete spread footings (18" depth)</p>
+                            <p className="text-muted-foreground">Original 1927 concrete spread footings (18&apos; depth)</p>
                             <p className="text-muted-foreground">2018 seismic retrofits ($620K)</p>
                           </div>
                           <div>
                             <h3 className="font-medium mb-2">Framing</h3>
                             <p className="text-muted-foreground">Steel wide-flange columns (W14×132)</p>
-                            <p className="text-muted-foreground">8" concrete decking</p>
+                            <p className="text-muted-foreground">8&apos; concrete decking</p>
                             <p className="text-muted-foreground">125 psf live load capacity</p>
                           </div>
                         </div>
@@ -346,7 +346,7 @@ export default function PropertyReport() {
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">HVAC</h3>
-                            <p className="text-muted-foreground">2019 Trane® rooftop units (2× 60-ton)</p>
+                            <p className="text-muted-foreground">2019 Trane&reg; rooftop units (2× 60-ton)</p>
                             <p className="text-muted-foreground">8-year remaining useful life</p>
                           </div>
                           <Separator />
@@ -408,15 +408,13 @@ export default function PropertyReport() {
                         <div className="space-y-4">
                           <div>
                             <h3 className="font-medium mb-2">FEMA Designation</h3>
-                            <Badge variant="warning" className="mb-2">
-                              Zone AE
-                            </Badge>
+                            <Badge variant="destructive">Zone AE</Badge>
                             <p className="text-muted-foreground">1% annual flood chance</p>
                             <p className="text-muted-foreground">BFE 12.3 NAVD88</p>
                           </div>
                           <div>
                             <h3 className="font-medium mb-2">Mitigation Requirements</h3>
-                            <p className="text-muted-foreground">3' freeboard above BFE for new construction</p>
+                            <p className="text-muted-foreground">3&apos; freeboard above BFE for new construction</p>
                           </div>
                         </div>
                       </CardContent>
@@ -611,7 +609,7 @@ export default function PropertyReport() {
                             <TableRow>
                               <TableCell>Structural Upgrades</TableCell>
                               <TableCell>
-                                <Badge variant="warning">Medium</Badge>
+                                <Badge variant="secondary">Medium</Badge>
                               </TableCell>
                               <TableCell>Probable</TableCell>
                               <TableCell>$1.2M</TableCell>

@@ -28,7 +28,7 @@ export default function DevelopmentInfo() {
                         <ul className="space-y-2 text-muted-foreground">
                           <li>By-right entitlements: 5-15 primary uses without discretionary approval</li>
                           <li>Conditional use thresholds: Special permits for high-impact uses</li>
-                          <li>300-500' buffers required from residential zones</li>
+                          <li>300-500&apos; buffers required from residential zones</li>
                         </ul>
                       </div>
                       <Separator />
@@ -60,9 +60,9 @@ export default function DevelopmentInfo() {
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Primary Setback Ratios</h3>
                         <ul className="space-y-2 text-muted-foreground">
-                          <li>Front setbacks: 0' in urban cores to 50'+ in suburban zones</li>
-                          <li>Side/Rear buffers: 5-10' for residential, increasing with building height</li>
-                          <li>30' separations between tall buildings in specific zones</li>
+                          <li>Front setbacks: 0&apos; in urban cores to 50&apos;+ in suburban zones</li>
+                          <li>Side/Rear buffers: 5-10&apos; for residential, increasing with building height</li>
+                          <li>30&apos; separations between tall buildings in specific zones</li>
                         </ul>
                       </div>
                       <Separator />
@@ -105,7 +105,7 @@ export default function DevelopmentInfo() {
                         <h3 className="font-semibold mb-3 text-lg">Maintenance Compliance</h3>
                         <ul className="space-y-2 text-muted-foreground">
                           <li>5-10 year façade examination cycles</li>
-                          <li>42" minimum parapet heights in wind-prone regions</li>
+                          <li>42&quot; minimum parapet heights in wind-prone regions</li>
                         </ul>
                       </div>
                     </div>
@@ -129,7 +129,7 @@ export default function DevelopmentInfo() {
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Vertical Limitations</h3>
                         <ul className="space-y-2 text-muted-foreground">
-                          <li>35-85' typical in mixed-use zones</li>
+                          <li>35-85&apos; typical in mixed-use zones</li>
                           <li>15-25% height bonuses for affordable housing</li>
                           <li>Tower separation requirements vary by city</li>
                         </ul>
@@ -138,7 +138,7 @@ export default function DevelopmentInfo() {
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Massing Configuration</h3>
                         <ul className="space-y-2 text-muted-foreground">
-                          <li>15' setbacks above 85' common in West Coast cities</li>
+                          <li>15&apos; setbacks above 85&apos; common in West Coast cities</li>
                           <li>Floorplate restrictions vary from 12,000 SF to 25,000 SF</li>
                         </ul>
                       </div>

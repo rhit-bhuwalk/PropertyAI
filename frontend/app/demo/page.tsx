@@ -10,6 +10,7 @@ import EntitlementsInfo from "./entitlements-info"
 import { PrintDialog } from "@/components/print-dialog"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import "@/styles/demo.css"
+import Image from 'next/image'
 
 export default function PropertyAnalysisDashboard() {
   return (
@@ -31,27 +32,33 @@ export default function PropertyAnalysisDashboard() {
               <CarouselContent>
                 <CarouselItem>
                   <div className="aspect-[16/9] relative overflow-hidden rounded-lg">
-                    <img
+                    <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uZ7J3h8v7RkCQvbW4zOpGQWPKISqu1.png"
                       alt="Exterior view of the property showing modern two-story residential building"
+                      layout="fill"
+                      objectFit="cover"
                       className="object-cover w-full h-full"
                     />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
                   <div className="aspect-[16/9] relative overflow-hidden rounded-lg">
-                    <img
+                    <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nbZliwuRjp9a7cwyA8vUFEErMJfxOt.png"
                       alt="Interior view showing home office and living room spaces"
+                      layout="fill"
+                      objectFit="cover"
                       className="object-cover w-full h-full"
                     />
                   </div>
                 </CarouselItem>
                 <CarouselItem>
                   <div className="aspect-[16/9] relative overflow-hidden rounded-lg">
-                    <img
+                    <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZU9GzXZxEpWtz4PKmrPWa5s1uuBZRC.png"
                       alt="Map view of the property location"
+                      layout="fill"
+                      objectFit="cover"
                       className="object-cover w-full h-full"
                     />
                   </div>
