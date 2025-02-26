@@ -3,7 +3,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { MapPin } from "lucide-react"
-import PropertyReport from "./property-report"
+import { GeneralPropertyInfo } from "./general-property-info"
 import MarketResearch from "./market-research"
 import DevelopmentInfo from "./development-info"
 import EntitlementsInfo from "./entitlements-info"
@@ -11,8 +11,9 @@ import { PrintDialog } from "@/components/print-dialog"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel"
 import "@/styles/demo.css"
 import Image from 'next/image'
-
 export default function PropertyAnalysisDashboard() {
+
+
   return (
     <main className="property-demo min-h-screen">
       <div className="container mx-auto py-12 px-4 md:px-8 space-y-12">
@@ -35,8 +36,8 @@ export default function PropertyAnalysisDashboard() {
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uZ7J3h8v7RkCQvbW4zOpGQWPKISqu1.png"
                       alt="Exterior view of the property showing modern two-story residential building"
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -46,8 +47,8 @@ export default function PropertyAnalysisDashboard() {
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nbZliwuRjp9a7cwyA8vUFEErMJfxOt.png"
                       alt="Interior view showing home office and living room spaces"
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -57,8 +58,8 @@ export default function PropertyAnalysisDashboard() {
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-ZU9GzXZxEpWtz4PKmrPWa5s1uuBZRC.png"
                       alt="Map view of the property location"
-                      layout="fill"
-                      objectFit="cover"
+                      fill
+                      sizes="(max-width: 768px) 100vw, 50vw"
                       className="object-cover w-full h-full"
                     />
                   </div>
@@ -93,7 +94,7 @@ export default function PropertyAnalysisDashboard() {
 
         <Tabs defaultValue="property" className="space-y-8">
           <TabsList className="grid w-full grid-cols-4 lg:w-[800px] tabs-list">
-            <TabsTrigger value="property">Property Report</TabsTrigger>
+            <TabsTrigger value="property">General Property Info</TabsTrigger>
             <TabsTrigger value="market">Market Research</TabsTrigger>
             <TabsTrigger value="development">Development Info</TabsTrigger>
             <TabsTrigger value="entitlements">Entitlements</TabsTrigger>
@@ -106,7 +107,7 @@ export default function PropertyAnalysisDashboard() {
                 Comprehensive assessment of physical characteristics, zoning requirements, and development potential.
               </p>
             </div>
-            <PropertyReport />
+            <GeneralPropertyInfo />
           </TabsContent>
 
           <TabsContent value="market" className="m-0" data-section="market">
