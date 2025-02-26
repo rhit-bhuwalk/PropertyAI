@@ -20,8 +20,8 @@ export default function DevelopmentInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Permitted Use Matrix</h3>
@@ -54,8 +54,8 @@ export default function DevelopmentInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Primary Setback Ratios</h3>
@@ -89,8 +89,8 @@ export default function DevelopmentInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Design Mandates</h3>
@@ -123,8 +123,8 @@ export default function DevelopmentInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Vertical Limitations</h3>
@@ -157,8 +157,8 @@ export default function DevelopmentInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Subsurface Coordination</h3>
@@ -190,8 +190,8 @@ export default function DevelopmentInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Parking Requirements</h3>
@@ -224,8 +224,8 @@ export default function DevelopmentInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Contamination Protocols</h3>

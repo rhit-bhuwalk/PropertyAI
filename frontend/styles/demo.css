@@ -28,19 +28,22 @@
 /* Common interactive element styles */
 .property-demo .accordion-trigger,
 .property-demo .tabs-list [role="tab"] {
-  border-radius: 0.75rem;
+  /* border-radius: 0.75rem; */
   transition: background-color 0.2s ease;
 }
 
 /* Active states */
 .property-demo .accordion-trigger[data-state="open"] {
-  background-color: #f97316;
-  color: white;
+  /* background-color: #f97316;  */
+  /* color: white; */
+  border-bottom-width: 2px;
+  border-bottom-color: #f97316 !important;
 }
 
 .property-demo .tabs-list [data-state="active"] {
-  background-color: #f97316 !important;
-  color: white;
+  /* background-color: #f97316 !important; */
+  border-bottom-color: #f97316 !important;
+  color: #f97316 !important;
 }
 
 /* Content areas */
@@ -56,7 +59,9 @@
 .property-demo .tabs-list {
   background-color: var(--secondary);
   padding: 4px;
-  border-radius: 0.75rem;
+  /* border-radius: 0.75rem; */
+  border-bottom-width: 1px;
+  border-bottom-color: #c1c1c1;
 }
 
 .property-demo .badge {

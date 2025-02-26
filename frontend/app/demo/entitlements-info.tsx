@@ -20,8 +20,8 @@ export default function EntitlementsInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-4">
                       <p className="text-muted-foreground">Municipal review process including:</p>
                       <ul className="list-disc pl-6 space-y-2 text-muted-foreground">
@@ -45,8 +45,8 @@ export default function EntitlementsInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Variance Requirements</h3>
@@ -80,8 +80,8 @@ export default function EntitlementsInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Application Requirements</h3>
@@ -115,8 +115,8 @@ export default function EntitlementsInfo() {
                 </div>
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
-                <Card className="bg-white shadow-md">
-                  <CardContent className="pt-6">
+                <Card className="border-none shadow-none">
+                  <CardContent className="pt-3 pl-3">
                     <div className="space-y-6">
                       <div>
                         <h3 className="font-semibold mb-3 text-lg">Required Permits</h3>

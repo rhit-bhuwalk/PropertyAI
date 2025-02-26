@@ -21,11 +21,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>Core Population Metrics</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none pb-0 mb-0">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">Core Population Metrics</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Growth Indicators</h3>
@@ -67,11 +65,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>Employment Fundamentals</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">Employment Fundamentals</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Key Metrics</h3>
@@ -107,11 +103,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>Market Indicators</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">Market Indicators</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Housing Stock Analysis</h3>
@@ -147,11 +141,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>Infrastructure Assessment</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">Infrastructure Assessment</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Traditional Utilities</h3>
@@ -185,11 +177,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>AARP Livability Metrics</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">AARP Livability Metrics</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Key Indicators</h3>
@@ -224,11 +214,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>Policy Framework</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">Policy Framework</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Zoning and Entitlements</h3>
@@ -262,11 +250,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>Risk Assessment</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">Risk Assessment</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Market Cyclicality</h3>
@@ -300,11 +286,9 @@ export default function MarketResearch() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <div className="grid gap-6">
-                  <Card className="bg-white shadow-md">
-                    <CardHeader>
-                      <CardTitle>Future Growth Indicators</CardTitle>
-                    </CardHeader>
-                    <CardContent>
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
+                      <h3 className="font-semibold mb-3 text-lg">Future Growth Indicators</h3>
                       <div className="space-y-6">
                         <div>
                           <h3 className="font-medium mb-2">Technology Adoption</h3>
