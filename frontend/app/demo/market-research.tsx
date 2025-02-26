@@ -1,7 +1,7 @@
 "use client"
 
 import { Users, TrendingUp, Building2, Radio, Smile, Scale, ShieldAlert, Lightbulb } from "lucide-react"
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent} from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion"
 
