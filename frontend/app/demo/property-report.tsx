@@ -11,7 +11,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 export default function PropertyReport() {
   return (
     <div className="min-h-screen">
-      <div className="container mx-auto max-w-7xl">
+      <div className="container mx-auto ">
         <div className="space-y-16">
           {/* Header */}
 
@@ -25,8 +25,8 @@ export default function PropertyReport() {
               </AccordionTrigger>
               <AccordionContent className="accordion-content">
                 <section className="space-y-6">
-                  <Card className="bg-white shadow-md">
-                    <CardContent className="pt-8">
+                  <Card className="border-none shadow-none">
+                    <CardContent className="pt-3 pl-3">
                       <div className="grid gap-8">
                         <div>
                           <h3 className="font-semibold mb-3 text-lg">Geospatial Information</h3>
@@ -94,11 +94,9 @@ export default function PropertyReport() {
               <AccordionContent className="accordion-content">
                 <section className="space-y-6">
                   <div className="grid gap-6">
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Lot Configuration</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none pb-0 mb-0">
+                      <CardContent className="pt-3 pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Lot Configuration</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">Dimensional Analysis</h3>
@@ -128,15 +126,14 @@ export default function PropertyReport() {
                             <p className="text-muted-foreground">8.3&apos; elevation differential</p>
                             <p className="text-muted-foreground">Class C clay soil (3,500 psf bearing capacity)</p>
                           </div>
+                          <Separator />
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Easements & Encumbrances</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none pb-0 mb-0">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Easements & Encumbrances</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">Recorded Easements</h3>
@@ -155,15 +152,14 @@ export default function PropertyReport() {
                               <li>Setback requirements from historic façade</li>
                             </ul>
                           </div>
+                          <Separator />
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Structural Inventory</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Structural Inventory</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">Existing Improvements</h3>
@@ -209,11 +205,9 @@ export default function PropertyReport() {
               <AccordionContent className="accordion-content">
                 <section className="space-y-6">
                   <div className="grid gap-6">
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Current Zoning Analysis</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none pb-0 mb-0">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Current Zoning Analysis</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">Development Standards</h3>
@@ -245,15 +239,14 @@ export default function PropertyReport() {
                               <li>Parking reduction (transit overlay)</li>
                             </ul>
                           </div>
+                          <Separator />
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Entitlement Status</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Entitlement Status</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">Current Approvals</h3>
@@ -317,32 +310,30 @@ export default function PropertyReport() {
               <AccordionContent className="accordion-content">
                 <section className="space-y-6">
                   <div className="grid gap-6">
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Structural Components</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none pb-0 mb-0">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Structural Components</h3>
                         <div className="space-y-4">
                           <div>
                             <h3 className="font-medium mb-2">Foundation</h3>
                             <p className="text-muted-foreground">Original 1927 concrete spread footings (18&apos; depth)</p>
                             <p className="text-muted-foreground">2018 seismic retrofits ($620K)</p>
                           </div>
+                          <Separator />
                           <div>
                             <h3 className="font-medium mb-2">Framing</h3>
                             <p className="text-muted-foreground">Steel wide-flange columns (W14×132)</p>
                             <p className="text-muted-foreground">8&apos; concrete decking</p>
                             <p className="text-muted-foreground">125 psf live load capacity</p>
                           </div>
+                          <Separator />
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Mechanical Systems</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Mechanical Systems</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">HVAC</h3>
@@ -376,11 +367,9 @@ export default function PropertyReport() {
               <AccordionContent className="accordion-content">
                 <section className="space-y-6">
                   <div className="grid gap-6">
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Environmental Assessment</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none pb-0 mb-0">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Environmental Assessment</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">Phase I ESA Findings (2024)</h3>
@@ -396,15 +385,14 @@ export default function PropertyReport() {
                             <p className="text-muted-foreground">TCE levels: 1.8 ppm (EPA RSL 0.6 ppm)</p>
                             <p className="text-muted-foreground">Monitoring well MW-3</p>
                           </div>
+                          <Separator />
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Flood Risk Assessment</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Flood Risk Assessment</h3>
                         <div className="space-y-4">
                           <div>
                             <h3 className="font-medium mb-2">FEMA Designation</h3>
@@ -434,12 +422,10 @@ export default function PropertyReport() {
               <AccordionContent className="accordion-content">
                 <section className="space-y-6">
                   <div className="grid md:grid-cols-2 gap-6">
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Current Use Analysis</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <dl className="space-y-4">
+                    <Card className="border-none shadow-none pb-0 mb-0">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Current Use Analysis</h3>
+                        <dl className="space-y-4 mb-6">
                           <div>
                             <dt className="font-medium">Office Rents</dt>
                             <dd className="text-muted-foreground">$42/SF</dd>
@@ -457,15 +443,14 @@ export default function PropertyReport() {
                             <dd className="text-muted-foreground">$28.5M</dd>
                           </div>
                         </dl>
+                        <Separator />
                       </CardContent>
                     </Card>
 
-                    <Card className="bg-white shadow-md md:col-span-2">
-                      <CardHeader>
-                        <CardTitle>Tax History & Projections</CardTitle>
-                      </CardHeader>
-                      <CardContent>
-                        <div className="space-y-6">
+                    <Card className="border-none shadow-none md:col-span-2">
+                      <CardContent className="pl-3 pb-0 mb-0">
+                        <h3 className="font-semibold mb-3 text-lg">Tax History & Projections</h3>
+                        <div className="space-y-6 mb-6">
                           <Table>
                             <TableHeader>
                               <TableRow>
@@ -516,14 +501,12 @@ export default function PropertyReport() {
                             </ul>
                           </div>
                         </div>
+                        <Separator />
                       </CardContent>
                     </Card>
-
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Reuse Potential</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none mt-0 pt-0">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Reuse Potential</h3>
                         <dl className="space-y-4">
                           <div>
                             <dt className="font-medium">Proposed Use</dt>
@@ -559,11 +542,9 @@ export default function PropertyReport() {
               <AccordionContent className="accordion-content">
                 <section className="space-y-6">
                   <div className="grid gap-6">
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Insurance Profile</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none pb-0 mb-0">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Insurance Profile</h3>
                         <div className="space-y-6">
                           <div>
                             <h3 className="font-medium mb-2">Current Coverage</h3>
@@ -579,15 +560,14 @@ export default function PropertyReport() {
                               <li>2019: $42K façade repair (APD# 298-112233)</li>
                             </ul>
                           </div>
+                          <Separator />
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="bg-white shadow-md">
-                      <CardHeader>
-                        <CardTitle>Risk Assessment Matrix</CardTitle>
-                      </CardHeader>
-                      <CardContent>
+                    <Card className="border-none shadow-none">
+                      <CardContent className="pl-3">
+                        <h3 className="font-semibold mb-3 text-lg">Risk Assessment Matrix</h3>
                         <Table>
                           <TableHeader>
                             <TableRow>
