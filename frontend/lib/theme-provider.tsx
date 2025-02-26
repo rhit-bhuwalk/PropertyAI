@@ -7,6 +7,7 @@ type Theme = "dark" | "light"
 type ThemeProviderProps = {
   children: React.ReactNode
   defaultTheme?: Theme
+  attribute?: string
 }
 
 type ThemeProviderState = {
