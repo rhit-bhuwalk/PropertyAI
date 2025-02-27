@@ -85,7 +85,7 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <CalendarButton />
-              <Link href="/demo">
+              <Link href="/report">
                 <Button className="bg-[#E86C24] hover:bg-[#E86C24]/90 text-white px-12 py-6 text-lg font-semibold h-[60px] w-[240px] rounded-lg">
                   See Demo
                 </Button>
