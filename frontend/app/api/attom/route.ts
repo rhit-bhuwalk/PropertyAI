@@ -1,11 +1,10 @@
-// pages/api/property.ts
+// app/api/property/route.ts
 import { NextResponse } from "next/server";
 import axios, { AxiosError } from "axios";
 import { ZodType } from "zod";
 import { ExpandedProfileSchema } from "@/schemas/endpoints/attom-expanded-profile";
 
 const BASE_URL = "https://api.gateway.attomdata.com/propertyapi/v1.0.0";
-
 
 // Map endpoints to their corresponding schemas
 const endpointSchemas: Record<string, ZodType<unknown>> = {
@@ -21,7 +20,7 @@ function logEndpoint(
   let message = `[ATTOM] ${name}: ${status}`;
   if (error) {
     const axiosError = error as AxiosError;
-    const response = axiosError.response
+    const response = axiosError.response;
     message += ` (${response?.status || error.name}: ${response?.data || error.message})`;
   }
   console.log(message);
@@ -30,7 +29,7 @@ function logEndpoint(
 /**
  * A reusable class for calling the Attom API and validating the response.
  */
-export class AttomFetcher<T> {
+class AttomFetcher<T> {
   constructor(public endpoint: string, public schema: ZodType<T>) {}
 
   async fetch(params: Record<string, string | number>): Promise<T> {
@@ -56,14 +55,14 @@ export class AttomFetcher<T> {
 export async function POST(request: Request) {
   try {
     const { endpoint, params } = await request.json();
-    
+
     if (!endpoint) {
       return NextResponse.json({ error: "Endpoint is required." }, { status: 400 });
     }
 
-    // Get the schema for this endpoint, or use the generic schema if not found
+    // Get the schema for this endpoint, or use a default if not found
     const schema = endpointSchemas[endpoint] || endpointSchemas["*"];
-    
+
     const fetcher = new AttomFetcher(endpoint, schema);
     const validatedData = await fetcher.fetch(params);
 
@@ -76,5 +75,3 @@ export async function POST(request: Request) {
     );
   }
 }
-
-console.log('Environment Variables:', process.env);
