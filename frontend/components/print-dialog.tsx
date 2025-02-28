@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Checkbox } from "@/components/ui/checkbox"
 import { ScrollArea } from "@/components/ui/scroll-area"
 import { Separator } from "@/components/ui/separator"
+import { PropertyReportHandler, PropertyReportJSON } from "@/lib/report-handler";
 
 interface PrintSection {
   id: string
@@ -68,7 +69,11 @@ const printSections: PrintSection[] = [
   },
 ]
 
-export function PrintDialog() {
+interface PrintDialogProps {
+  reportHandler: PropertyReportHandler | null;
+}
+
+export function PrintDialog({ reportHandler }: PrintDialogProps) {
   const [selectedSections, setSelectedSections] = useState<Record<string, boolean>>({})
   const [selectedSubsections, setSelectedSubsections] = useState<Record<string, boolean>>({})
 
@@ -101,6 +106,10 @@ export function PrintDialog() {
   }
 
   const handlePrint = () => {
+    // console.log("#################### HTML SCHEMA ####################");
+    // console.log(reportHandler?.toHTML());
+    // console.log("################## END HTML SCHEMA ##################");
+    const html = reportHandler?.toHTML();
     // Create a hidden iframe for printing
     const printFrame = document.createElement("iframe")
     printFrame.style.position = "fixed"
@@ -174,6 +183,7 @@ export function PrintDialog() {
     <div class="print-content">
       <h1>Property Assessment Report</h1>
       <p>1500 Market Street, Philadelphia</p>
+      ${html}
     </div>
   </body>
 </html>
