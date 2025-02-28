@@ -29,14 +29,19 @@ export default function PropertyAnalysisDashboard() {
   const [reportHandler, setReportHandler] = useState<PropertyReportHandler | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [propertyAddress, setPropertyAddress] = useState<string | null>(null);
 
   useEffect(() => {
     async function fetchData() {
       try {
         const mode = process.env.NEXT_PUBLIC_MODE;
         const endpoint = mode === "test" ? "/api/mock-attom" : "/api/attom";
-        const params = mode === "test" ? {} : { address: "1500 Market Street, Philadelphia" };
-
+        // const params = mode === "test" ? {} : { address: "1500 Market Street, Philadelphia" };
+        const propertyAddress = localStorage.getItem("propertyAddress") || "";
+        const params = {
+          address: propertyAddress,
+        }
+        setPropertyAddress(propertyAddress);
         const response = await fetch(endpoint, {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -95,7 +100,7 @@ export default function PropertyAnalysisDashboard() {
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <MapPin className="h-5 w-5" />
-            <p className="text-lg">1500 Market Street, Philadelphia</p>
+            <p className="text-lg">{propertyAddress}</p>
           </div>
 
           {/* Image Carousel */}
