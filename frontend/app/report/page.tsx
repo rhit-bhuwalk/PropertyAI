@@ -91,7 +91,7 @@ export default function PropertyAnalysisDashboard() {
         <div className="space-y-8">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl font-bold tracking-tight">Property Assessment Report</h1>
-            <PrintDialog />
+            <PrintDialog reportHandler={reportHandler} />
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <MapPin className="h-5 w-5" />

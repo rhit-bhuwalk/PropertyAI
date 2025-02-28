@@ -144,6 +144,82 @@ export class PropertyReportHandler {
     };
   }
 
+  toHTML(): string {
+    if (!this.generalInfo) {
+      return '<p class="error">No property information available</p>';
+    }
+    
+    let html = "";
+
+    // Iterate over each top-level section (h1)
+    for (const [sectionName, sectionValue] of Object.entries(this.generalInfo)) {
+      html += `<h1 style="font-size: 1.5rem; margin-top: 1.5em;">${sectionName}</h1>`;
+
+      // Each sub-section (h2)
+      for (const [subheaderName, subheaderValue] of Object.entries(sectionValue)) {
+        html += `<h2 style="font-size: 1.2rem; margin-top: 1em;">${subheaderName}</h2>`;
+
+        // Handle each leaf node
+        for (const [key, leafObject] of Object.entries(subheaderValue)) {
+          if (!leafObject || typeof leafObject !== "object") continue;
+
+          // Check if this is a nested structure
+          if (this.isNestedStructure(key)) {
+            html += this.renderNestedStructure(key, leafObject as Record<string, DataPoint>);
+            continue;
+          }
+
+          // Handle regular DataPoints
+          if (isDataPoint(leafObject)) {
+            html += this.renderDataPoint(leafObject, key);
+          }
+        }
+      }
+    }
+
+    return html;
+  }
+
+  private isNestedStructure(key: string): boolean {
+    const nestedKeys = [
+      "Zoning Classification",
+      "Overlay Districts",
+      "Dimensional Analysis",
+      "Topographical Profile",
+      "Recorded Easements",
+      "Deed Restrictions",
+      "Existing Improvements",
+      "Building Metrics"
+    ];
+    return nestedKeys.includes(key);
+  }
+
+  private renderDataPoint(dataPoint: DataPoint, fallbackKey: string): string {
+    const alias = dataPoint.alias || fallbackKey;
+    const rawValue = dataPoint.value;
+    const displayValue = rawValue === null || rawValue === undefined ? "NOT FOUND" : rawValue;
+
+    return `<p style="margin-left: 1.5em;"><strong>${alias}:</strong> ${displayValue}</p>`;
+  }
+
+  private renderNestedStructure(title: string, data: Record<string, DataPoint>): string {
+    let html = `<div style="margin-left: 1.5em;">
+      <strong>${title}</strong>
+      <div style="margin-left: 1.5em;">`;
+
+    for (const [key, dataPoint] of Object.entries(data)) {
+      if (isDataPoint(dataPoint)) {
+        const displayValue = dataPoint.value === null || dataPoint.value === undefined
+          ? "NOT FOUND"
+          : dataPoint.value;
+        html += `<p><em>${dataPoint.alias}:</em> ${displayValue}</p>`;
+      }
+    }
+
+    html += '</div></div>';
+    return html;
+  }
+
   static fromJSON(json: PropertyReportJSON): PropertyReportHandler {
     const report = new PropertyReportHandler(json.propertyUrl || undefined);
     if (json.generalInfo) report.generalInfo = json.generalInfo;
@@ -255,6 +331,15 @@ export class PropertyReportHandler {
 
 function isObject(item: unknown): boolean {
   return Boolean(item) && typeof item === "object" && !Array.isArray(item);
+}
+
+function isDataPoint(obj: unknown): obj is DataPoint {
+  return Boolean(
+    obj &&
+    typeof obj === 'object' &&
+    'alias' in obj &&
+    'value' in obj
+  );
 }
 
 export type ReportStatus = "pending" | "processing" | "updated" | "complete" | "error";
