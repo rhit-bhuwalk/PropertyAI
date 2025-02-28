@@ -207,7 +207,7 @@ export class PropertyReportHandler {
       <strong>${title}</strong>
       <div style="margin-left: 1.5em;">`;
 
-    for (const [key, dataPoint] of Object.entries(data)) {
+    for (const [, dataPoint] of Object.entries(data)) {
       if (isDataPoint(dataPoint)) {
         const displayValue = dataPoint.value === null || dataPoint.value === undefined
           ? "NOT FOUND"
