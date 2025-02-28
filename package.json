@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "@types/google.maps": "^3.58.1",
+    "@types/uuid": "^10.0.0"
+  },
+  "dependencies": {
+    "uuid": "^11.1.0"
+  }
+}
