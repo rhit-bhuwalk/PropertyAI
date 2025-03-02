@@ -9,7 +9,7 @@ readme = "README.md"
 requires-python = ">=3.11, <4.0"
 dependencies = [
     "pydantic (>=2.10.6,<3.0.0)",
-    "zeroentropy (>=0.1.0a2,<0.2.0)",
+    "zeroentropy (>=0.1.0a3,<0.2.0)",
     "pandas (>=2.2.3,<3.0.0)",
     "beautifulsoup4 (>=4.12.3,<5.0.0)",
     "asyncio (>=3.4.3,<4.0.0)",

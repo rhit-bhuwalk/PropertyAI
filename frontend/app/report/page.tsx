@@ -1,13 +1,11 @@
-"use client"
+"use client";
 
 import React, { useEffect, useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
 import { GeneralPropertyTab } from "@/app/report/general-property-info-tab";
-// import MarketResearchTab from "@/app/report/market-research";
 import { DevelopmentInfoTab } from "@/app/report/development-info";
-// import EntitlementsInfoTab from "@/app/report/entitlements-info";
 import { PrintDialog } from "@/components/print-dialog";
 import {
   Carousel,
@@ -20,10 +18,8 @@ import "@/styles/report.css";
 import Image from "next/image";
 import { NavBar } from "@/components/nav-bar";
 import { PropertyReportHandler } from "@/lib/report-handler";
-import type { GeneralPropertyInfo } from "@/schemas/views/general-property-info-schema";
-import { ExpandedProfileSchema } from "@/schemas/endpoints/attom-expanded-profile";
-import { PropertyExpandedProfile } from "@/schemas/endpoints/attom-expanded-profile";
-import { mapAttomProfileToGeneralPropertyInfo } from "@/schemas/mappings/attom-expanded-profile-mapping";
+import { fetchAttomData } from "@/lib/attom-data-fetcher";
+import { fetchZoningData } from "@/lib/codebook-data-fetcher";
 
 export default function PropertyAnalysisDashboard() {
   const [reportHandler, setReportHandler] = useState<PropertyReportHandler | null>(null);
@@ -34,30 +30,23 @@ export default function PropertyAnalysisDashboard() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const mode = process.env.NEXT_PUBLIC_MODE;
-        const endpoint = mode === "test" ? "/api/mock-attom" : "/api/attom";
-        // const params = mode === "test" ? {} : { address: "1500 Market Street, Philadelphia" };
-        const propertyAddress = localStorage.getItem("propertyAddress") || "";
-        const params = {
-          address: propertyAddress,
-        }
-        setPropertyAddress(propertyAddress);
-        const response = await fetch(endpoint, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ endpoint: "property/expandedprofile", params }),
-        })
-        if (!response.ok) {
-          throw new Error("Failed to fetch property data");
-        }
-        const data = await response.json();
-        const validatedEndpoint: PropertyExpandedProfile = ExpandedProfileSchema.parse(data)
-        const mappedData: GeneralPropertyInfo = mapAttomProfileToGeneralPropertyInfo(validatedEndpoint);
-        const validatedData: GeneralPropertyInfo = PropertyReportHandler.validateGeneralInfo(mappedData);
         const handler = new PropertyReportHandler();
-        handler.setGeneralInfo(validatedData);
-        handler.setDevelopmentInfo({});
         setReportHandler(handler);
+        const propertyAddress = localStorage.getItem("propertyAddress") || "";
+        setPropertyAddress(propertyAddress);
+
+        // Fetch ATTOM data
+        await fetchAttomData(handler, propertyAddress);
+        
+        // Extract county, state, and zoning code from property data
+        const propertyInfo = handler.getGeneralInfo();      
+        const county = propertyInfo?.["Property Identification & Legal Framework"]?.["Geospatial Information"]?.munName?.value as string || "";
+        const state = propertyInfo?.["Property Identification & Legal Framework"]?.["Geospatial Information"]?.countrySubd?.value as string || "";        
+        const zoningCode = propertyInfo?.["Property Identification & Legal Framework"]?.["Regulatory Status"]?.["Zoning Classification"]?.siteZoningIdent?.value as string || "";
+        if (county && state && zoningCode) {
+          await fetchZoningData(handler, county, state, zoningCode);
+        }
+        
       } catch (error) {
         setError(error instanceof Error ? error.message : "An unexpected error occurred");
       } finally {
@@ -96,7 +85,7 @@ export default function PropertyAnalysisDashboard() {
         <div className="space-y-8">
           <div className="flex items-center justify-between">
             <h1 className="text-4xl font-bold tracking-tight">Property Assessment Report</h1>
-            <PrintDialog reportHandler={reportHandler} />
+            <PrintDialog reportHandler={reportHandler!} />
           </div>
           <div className="flex items-center gap-2 text-muted-foreground">
             <MapPin className="h-5 w-5" />
@@ -140,14 +129,12 @@ export default function PropertyAnalysisDashboard() {
                     />
                   </div>
                 </CarouselItem>
-                {/*
-                  Duplicate images to test scrollability
-                */}
+                {/* Duplicate images for scrollability */}
                 <CarouselItem>
                   <div className="aspect-[16/9] relative overflow-hidden rounded-lg">
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-uZ7J3h8v7RkCQvbW4zOpGQWPKISqu1.png"
-                      alt="Exterior view of the property showing modern two-story residential building"
+                      alt="Exterior view of the property"
                       fill
                       style={{ objectFit: "cover" }}
                       className="object-cover w-full h-full"
@@ -158,7 +145,7 @@ export default function PropertyAnalysisDashboard() {
                   <div className="aspect-[16/9] relative overflow-hidden rounded-lg">
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-nbZliwuRjp9a7cwyA8vUFEErMJfxOt.png"
-                      alt="Interior view showing home office and living room spaces"
+                      alt="Interior view of the property"
                       fill
                       style={{ objectFit: "cover" }}
                       className="object-cover w-full h-full"
@@ -207,9 +194,7 @@ export default function PropertyAnalysisDashboard() {
         <Tabs defaultValue="property" className="space-y-8">
           <TabsList className="tabs-list">
             <TabsTrigger value="property">General Property Information</TabsTrigger>
-            {/* <TabsTrigger value="market">Market Research</TabsTrigger> */}
             <TabsTrigger value="development">Development Info</TabsTrigger>
-            {/* <TabsTrigger value="entitlements">Entitlements</TabsTrigger> */}
           </TabsList>
 
           <TabsContent value="property" className="m-0" data-section="property">
@@ -219,18 +204,8 @@ export default function PropertyAnalysisDashboard() {
                 Comprehensive assessment of physical characteristics, zoning requirements, and development potential.
               </p>
             </div>
-            <GeneralPropertyTab reportHandler={reportHandler} />
+            <GeneralPropertyTab reportHandler={reportHandler!} />
           </TabsContent>
-
-          {/* <TabsContent value="market" className="m-0" data-section="market">
-            <div className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Market Research Analysis</h2>
-              <p className="text-muted-foreground">
-                In-depth analysis of demographic trends, economic indicators, and market performance metrics.
-              </p>
-            </div>
-            <MarketResearchTab reportHandler={reportHandler} />
-          </TabsContent> */}
 
           <TabsContent value="development" className="m-0" data-section="development">
             <div className="mb-8">
@@ -239,19 +214,8 @@ export default function PropertyAnalysisDashboard() {
                 Detailed overview of zoning parameters, building requirements, and development standards.
               </p>
             </div>
-            <DevelopmentInfoTab reportHandler={reportHandler} />
+            <DevelopmentInfoTab reportHandler={reportHandler!} />
           </TabsContent>
-
-          {/* <TabsContent value="entitlements" className="m-0" data-section="entitlements">
-            <div className="mb-8">
-              <h2 className="text-2xl font-semibold mb-4">Entitlements Information</h2>
-              <p className="text-muted-foreground">
-                Overview of planning review, zoning variance, rezoning, and permit processes.
-              </p>
-            </div>
-            <EntitlementsInfoTab reportHandler={reportHandler} />
-          </TabsContent> */}
-
         </Tabs>
       </div>
     </main>

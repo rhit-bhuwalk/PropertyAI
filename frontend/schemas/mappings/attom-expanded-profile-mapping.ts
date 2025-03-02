@@ -17,7 +17,6 @@ export function mapAttomProfileToGeneralPropertyInfo(
   }
 
   const prop = expanded.property[0];
-  console.log('prop', prop);
   // Build a partial mapping for only the fields Atom provides.
   const partialMapping: DeepPartial<GeneralPropertyInfo> = {
     "Property Identification & Legal Framework": {
