@@ -21,6 +21,10 @@ const mockAttomData = {
         "multiApn": null,
         "attomId": 178213033
       },
+      "location": { 
+        "latitude": "39.9526",
+        "longitude": "-75.1652",
+      },
       "lot": {
         "depth": 286,
         "frontage": 376,
