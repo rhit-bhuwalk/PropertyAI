@@ -51,6 +51,11 @@ const AreaSchema = z.object({
   censusBlockGroup: z.string().optional().nullable().default(null),
 });
 
+const LocationSchema = z.object({
+  latitude: z.string().optional().nullable().default(null),
+  longitude: z.string().optional().nullable().default(null),
+});
+
 // ---------------- Address ----------------
 const AddressSchema = z.object({
   bldgName: z.any().optional().nullable().default(null),
@@ -243,6 +248,7 @@ const AssessmentSchema = z.object({
 // ---------------- Property ----------------
 const PropertySchema = z.object({
   identifier: IdentifierSchema.optional().nullable().default(null),
+  location: LocationSchema.optional().nullable().default(null),
   lot: LotSchema.optional().nullable().default(null),
   area: AreaSchema.optional().nullable().default(null),
   address: AddressSchema.optional().nullable().default(null),

@@ -201,7 +201,7 @@ export default function PropertyAnalysisDashboard() {
 
         <Tabs defaultValue="property" className="space-y-8">
           <TabsList className="tabs-list">
-            <TabsTrigger value="property">Property Report</TabsTrigger>
+            <TabsTrigger value="property">General Property Information</TabsTrigger>
             {/* <TabsTrigger value="market">Market Research</TabsTrigger> */}
             <TabsTrigger value="development">Development Info</TabsTrigger>
             {/* <TabsTrigger value="entitlements">Entitlements</TabsTrigger> */}

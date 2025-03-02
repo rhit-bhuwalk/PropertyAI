@@ -9,14 +9,20 @@ const zeroEntropy = new ZeroEntropy({
 
 export async function POST(req: NextRequest) {
   try {
-    const { url, userId, action, query } = await req.json();
-    console.log(url, userId, action, query);
+    const { url, userId, action, query, documentId } = await req.json();
+    console.log(url, userId, action, query, documentId);
     
     switch (action) {
       case 'push_codebook':
         return await handlePushCodebook(url, userId);
       case 'status':
         return await handleStatusCheck(userId);
+      case 'find_document':
+        return await handleFindDocument(userId, documentId);
+      case 'query_documents':
+        return await handleQueryDocuments(userId, query);
+      case 'query_codebook':
+        return await handleQueryCodebook(query, userId);
       default:
         return NextResponse.json({ error: 'Invalid action' }, { status: 400 });
     }
@@ -24,6 +30,63 @@ export async function POST(req: NextRequest) {
     console.error('ZeroEntropy API error:', error);
     return NextResponse.json(
       { error: 'Internal server error' },
+      { status: 500 }
+    );
+  }
+}
+
+async function handleQueryDocuments(userId: string, query: string) {
+  try {
+    const results = await zeroEntropy.queries.topDocuments({
+      collection_name: userId,
+      query,
+      k: 5,
+    });
+    
+    return NextResponse.json({ 
+      results: results.results,
+      message: 'Documents found successfully' 
+    });
+  } catch (error: any) {
+    console.error('Query documents error:', error);
+    
+    if (error?.status === 404) {
+      return NextResponse.json(
+        { error: 'Collection not found' },
+        { status: 404 }
+      );
+    }
+    
+    return NextResponse.json(
+      { error: 'Failed to query documents' },
+      { status: 500 }
+    );
+  }
+}
+
+async function handleFindDocument(userId: string, documentId: string) {
+  try {
+    const document = await zeroEntropy.documents.getInfo({
+      collection_name: userId,
+      path: documentId,
+    });
+    
+    return NextResponse.json({ 
+      document,
+      message: 'Document found successfully' 
+    });
+  } catch (error: any) {
+    console.error('Find document error:', error);
+    
+    if (error?.status === 404) {
+      return NextResponse.json(
+        { error: 'Document not found' },
+        { status: 404 }
+      );
+    }
+    
+    return NextResponse.json(
+      { error: 'Failed to find document' },
       { status: 500 }
     );
   }
@@ -57,7 +120,6 @@ async function handleStatusCheck(userId: string) {
 
 async function handlePushCodebook(url: string, userId: string) {
   try {
-    // Download PDF content
     const pdfResponse = await fetch(url);
     if (!pdfResponse.ok) {
       throw new Error('Failed to download PDF');
@@ -99,20 +161,32 @@ async function handlePushCodebook(url: string, userId: string) {
   }
 }
 
-// async function handleQueryCodebook(query: string, userId: string) {
-//   try {
-//     const response = await zeroEntropy.queries.top_snippets({
-//       collection_name: userId,
-//       query,
-//       k: 5,
-//     });
+async function handleQueryCodebook(query: string, userId: string) {
+  try {
+    const response = await zeroEntropy.queries.topSnippets({
+      collection_name: userId,
+      query,
+      k: 5,
+    });
 
-//     return NextResponse.json(response.results);
-//   } catch (error) {
-//     console.error('Query codebook error:', error);
-//     return NextResponse.json(
-//       { error: 'Failed to query codebook' },
-//       { status: 500 }
-//     );
-//   }
-// }
+    return NextResponse.json({
+      results: response.results,
+      message: 'Codebook queried successfully'
+    });
+  } catch (error: any) {
+    console.error('Query codebook error:', error);
+    
+    if (error?.status === 404) {
+      return NextResponse.json(
+        { error: 'Collection not found' },
+        { status: 404 }
+      );
+    }
+    
+    return NextResponse.json(
+      { error: 'Failed to query codebook' },
+      { status: 500 }
+    );
+  }
+}
+

@@ -22,6 +22,8 @@ export function mapAttomProfileToGeneralPropertyInfo(
   const partialMapping: DeepPartial<GeneralPropertyInfo> = {
     "Property Identification & Legal Framework": {
       "Geospatial Information": {
+        latitude: { alias: "Latitude", value: prop.location?.latitude ?? null, source: "attom" },
+        longitude: { alias: "Longitude", value: prop.location?.longitude ?? null, source: "attom" },
         munName: { alias: "Municipality Name", value: prop.area?.munName ?? null, source: "attom" },
         lotSize1: { alias: "Lot Size 1", value: prop.lot?.lotSize1 ?? null, source: "attom" },
         lotSize2: { alias: "Lot Size 2", value: prop.lot?.lotSize2 ?? null, source: "attom" },
