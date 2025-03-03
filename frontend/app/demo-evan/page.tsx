@@ -9,31 +9,32 @@ import "@/styles/report.css";
 
 // Sample conversation starters for property addresses
 const conversationStarters = [
-  {
-    id: 1,
-    propertyAddress: "1500 Market St, Philadelphia, PA 19102, USA",
-    propertyType: "Residential",
-  },
+//   {
+//     id: 1,
+//     propertyAddress: "1500 Market St, Philadelphia, PA 19102, USA",
+//     propertyType: "Residential",
+//   },
   {
     id: 2,
-    propertyAddress: "123 Market St. Philadelphia, PA",
-    propertyType: "Residential",
+    propertyAddress: "7315 Hwy 311, Sellersburg, IN 47172, USA",
+    propertyType: "Vacant Land Commercial",
   },
-  {
-    id: 3,
-    propertyAddress: "456 Market St. Philadelphia, PA",
-    propertyType: "Building",
-  },
+//   {
+
+//     id: 3,
+//     propertyAddress: "8635 Old Hwy 60, Sellersburg, IN 47172, USA",
+//     propertyType: "Existing Building Residential",
+//   },
   {
     id: 4,
-    propertyAddress: "789 Market St. Philadelphia, PA",
+    propertyAddress: "1206 W 186th St, Westfield, IN 46074, USA",
     propertyType: "Residential",
   },
-  {
-    id: 5,
-    propertyAddress: "1010 Market St. Philadelphia, PA",
-    propertyType: "Residential",
-  },
+//   {
+//     id: 5,
+//     propertyAddress: "3718 S 3rd St, Terre Haute, IN 47802, USA",
+//     propertyType: "Residential",
+//   },
 ];
 
 // Helper to load Google Maps script
