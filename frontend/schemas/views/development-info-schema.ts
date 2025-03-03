@@ -1,13 +1,11 @@
 import { z } from "zod";
 
-// Define a base DataPoint schema without defaults.
 const BaseDataPointSchema = z.object({
   alias: z.string(),
   value: z.union([z.string(), z.number(), z.null()]),
   source: z.union([z.string(), z.null()]),
 });
 
-// Helper that creates a DataPoint schema with a default alias and default values.
 export const dataPointWithAlias = (defaultAlias: string) =>
   BaseDataPointSchema.default({
     alias: defaultAlias,
