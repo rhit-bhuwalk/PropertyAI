@@ -19,6 +19,7 @@ import Image from "next/image";
 import { NavBar } from "@/components/nav-bar";
 import { PropertyReportHandler } from "@/lib/report-handler";
 import { fetchAttomData } from "@/lib/attom-data-fetcher";
+import { mockPropertyData } from "@/app/report/mock-data"
 import { fetchZoningData } from "@/lib/codebook-data-fetcher";
 
 export default function PropertyAnalysisDashboard() {
@@ -29,28 +30,45 @@ export default function PropertyAnalysisDashboard() {
 
   useEffect(() => {
     async function fetchData() {
-      try {
-        const handler = new PropertyReportHandler();
-        setReportHandler(handler);
-        const propertyAddress = localStorage.getItem("propertyAddress") || "";
-        setPropertyAddress(propertyAddress);
+      const handler = new PropertyReportHandler();
+      setReportHandler(handler);
+      const propertyAddress = localStorage.getItem("propertyAddress") || "";
+      setPropertyAddress(propertyAddress);
+      
+      const isDemo = localStorage.getItem("isDemo") === "true";
+      
+      if (isDemo) {
+        // Simulate loading delay
+        setTimeout(() => {
+          const propertyData = mockPropertyData[propertyAddress]
+          handler.setGeneralInfo(propertyData);
+          
+          setIsLoading(false);
+        }, 1500);
+      } else {
+        try {
+          // Fetch ATTOM data
+          await fetchAttomData(handler, propertyAddress);
 
-        // Fetch ATTOM data
-        await fetchAttomData(handler, propertyAddress);
+          // Fetch ATTOM data
+          await fetchAttomData(handler, propertyAddress);
         
-        // Extract county, state, and zoning code from property data
-        const propertyInfo = handler.getGeneralInfo();      
-        const county = propertyInfo?.["Property Identification & Legal Framework"]?.["Geospatial Information"]?.munName?.value as string || "";
-        const state = propertyInfo?.["Property Identification & Legal Framework"]?.["Geospatial Information"]?.countrySubd?.value as string || "";        
-        const zoningCode = propertyInfo?.["Property Identification & Legal Framework"]?.["Regulatory Status"]?.["Zoning Classification"]?.siteZoningIdent?.value as string || "";
-        if (county && state && zoningCode) {
-          await fetchZoningData(handler, county, state, zoningCode);
+          // Extract county, state, and zoning code from property data
+          const propertyInfo = handler.getGeneralInfo();      
+          
+          const county = propertyInfo?.["Property Identification & Legal Framework"]?.["Geospatial Information"]?.munName?.value as string || "";
+          const state = propertyInfo?.["Property Identification & Legal Framework"]?.["Geospatial Information"]?.countrySubd?.value as string || "";        
+          const zoningCode = propertyInfo?.["Property Identification & Legal Framework"]?.["Regulatory Status"]?.["Zoning Classification"]?.siteZoningIdent?.value as string || "";
+          if (county && state && zoningCode) {
+              await fetchZoningData(handler, county, state, zoningCode);
+          }
+
+        } catch (error) {
+          setError(error instanceof Error ? error.message : "An unexpected error occurred");
+          setIsLoading(false);
+        } finally {
+          setIsLoading(false);
         }
-        
-      } catch (error) {
-        setError(error instanceof Error ? error.message : "An unexpected error occurred");
-      } finally {
-        setIsLoading(false);
       }
     }
     fetchData();
