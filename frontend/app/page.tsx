@@ -66,9 +66,9 @@ export default function Home() {
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <CalendarButton />
-              <Link href="/demo">
+              <Link href={process.env.NEXT_PUBLIC_MODE === "demo" ? "/demo" : "/report"}>
                 <Button className="bg-[#E86C24] hover:bg-[#E86C24]/90 text-white px-12 py-6 text-lg font-semibold h-[60px] w-[240px] rounded-lg">
-                  See Demo
+                  {process.env.NEXT_PUBLIC_MODE === "demo" ? "See Demo" : "Get Started"}
                 </Button>
               </Link>
             </div>
@@ -213,9 +213,9 @@ export default function Home() {
               <span className="text-primary">Millions of InSites</span>
             </h2>
             <div className="p-px">
-              <Link href="/get-started">
+            <Link href={process.env.NEXT_PUBLIC_MODE === "demo" ? "/demo" : "/report"}>
                 <Button className="bg-[#E86C24] hover:bg-[#E86C24]/90 text-white px-12 py-6 text-lg font-semibold h-[60px] w-[240px] rounded-lg">
-                  Get Started
+                  {process.env.NEXT_PUBLIC_MODE === "demo" ? "See Demo" : "Get Started"}
                 </Button>
               </Link>
             </div>

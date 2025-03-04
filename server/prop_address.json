@@ -1,0 +1,3922 @@
+{
+    "status": {
+      "version": "1.0.0",
+      "code": 0,
+      "msg": "SuccessWithResult",
+      "total": 10000,
+      "page": 1,
+      "pagesize": 100,
+      "responseDateTime": "2025-03-03T21:14:19.244Z",
+      "transactionID": "115854488304db2e714403f93e38e0d2"
+    },
+    "property": [
+      {
+        "identifier": {
+          "Id": 30685,
+          "fips": "18167",
+          "apn": "84-06-33-427-004.000-002",
+          "attomId": 30685
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2412 LAYHER AVE",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2412 LAYHER AVE, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3552",
+          "postal3": "C071"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.440562",
+          "longitude": "-87.410069",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, RS0000090551, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "79629f6c331cfca8fa80d7c9fdfd568b",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 64aa13786851cf9b805526b036b85e99, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 187747,
+          "fips": "18167",
+          "apn": "84-06-27-437-001.000-002",
+          "attomId": 187747
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1402 S 17TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1402 S 17TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1525",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.452781",
+          "longitude": "-87.390328",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087590, SB0000087593, SB0000087599, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 239fc5e8b217d81e6a556c6ef1c05118, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 188561,
+          "fips": "18167",
+          "apn": "84-06-33-330-011.000-002",
+          "attomId": 188561
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2527 ARLETH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2527 ARLETH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2911",
+          "postal3": "C057"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.439292",
+          "longitude": "-87.418015",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 206189,
+          "fips": "18167",
+          "apn": "84-08-25-352-007.000-017",
+          "attomId": 206189
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "3926 W NEWTON DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "3926 W NEWTON DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": ""
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.364283",
+          "longitude": "-87.477799",
+          "distance": 0,
+          "geoid": "CO18167, CS1861776, DB1812090, RS0000495654, SB0000087584, SB0000087593, SB0000087600, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "1766db12b51d3c5f21d30d38ae3b8c35",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "ff88aa63363d7ece8c6e82292a333726",
+            "SB": "bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 332521,
+          "fips": "18167",
+          "apn": "84-06-33-178-022.000-002",
+          "attomId": 332521
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2139 S 1ST ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2139 S 1ST ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3034",
+          "postal3": "C057"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.443112",
+          "longitude": "-87.416784",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 529959,
+          "fips": "18167",
+          "apn": "84-12-22-477-005.000-016",
+          "attomId": 529959
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "14457 S STATE ROAD 63",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "14457 S STATE ROAD 63, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8825",
+          "postal3": "R026"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.291410",
+          "longitude": "-87.498534",
+          "distance": 0,
+          "geoid": "CO18167, CS1861704, DB1812090, SB0000087584, SB0000087593, SB0000087600, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "4d0e45c8e2e80e60861715ab075a2063",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "d10edec49e4e718bfc494cc5b61e56a7, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 2343685,
+          "fips": "18167",
+          "apn": "84-12-23-300-021.000-016",
+          "attomId": 2343685
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "14430 S STATE ROAD 63",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "14430 S STATE ROAD 63, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8825",
+          "postal3": "R026"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.291438",
+          "longitude": "-87.497420",
+          "distance": 0,
+          "geoid": "CO18167, CS1861704, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "4d0e45c8e2e80e60861715ab075a2063",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, d10edec49e4e718bfc494cc5b61e56a7, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 3767202,
+          "fips": "18167",
+          "apn": "84-08-24-476-010.000-017",
+          "attomId": 3767202
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7320 S STATE ROAD 63",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7320 S STATE ROAD 63, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9298",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.378048",
+          "longitude": "-87.463962",
+          "distance": 0,
+          "geoid": "CO18167, CS1861776, DB1812090, RS0000090693, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "1766db12b51d3c5f21d30d38ae3b8c35",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "b72eeda0982fdc5166720788ea791e3b",
+            "SB": "b628d750dde3fef1cc698396103e9ede, d10edec49e4e718bfc494cc5b61e56a7, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 7333183,
+          "fips": "18167",
+          "apn": "84-06-27-358-004.000-002",
+          "attomId": 7333183
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1514 S 10TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1514 S 10TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1716",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.449882",
+          "longitude": "-87.402653",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8415846,
+          "fips": "18167",
+          "apn": "84-06-27-351-015.000-002",
+          "attomId": 8415846
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1467 S 8TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1467 S 8TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1253",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.450692",
+          "longitude": "-87.405993",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8415873,
+          "fips": "18167",
+          "apn": "84-06-33-435-003.000-002",
+          "attomId": 8415873
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2604 S 6TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2604 S 6TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3534",
+          "postal3": "C041"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.438899",
+          "longitude": "-87.408855",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, RS0000340534, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "27f4545eead197cb626e6ab65162e7e9",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 64aa13786851cf9b805526b036b85e99",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8415880,
+          "fips": "18167",
+          "apn": "84-06-27-362-011.000-002",
+          "attomId": 8415880
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1615 S 11TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1615 S 11TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1721",
+          "postal3": "C018"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.448951",
+          "longitude": "-87.402049",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8415884,
+          "fips": "18167",
+          "apn": "84-08-13-300-021.000-017",
+          "attomId": 8415884
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "6128 S KATS PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "6128 S KATS PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8711",
+          "postal3": "R026"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.392215",
+          "longitude": "-87.471774",
+          "distance": 0,
+          "geoid": "CO18167, CS1861776, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "1766db12b51d3c5f21d30d38ae3b8c35",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8587105,
+          "fips": "18167",
+          "apn": "84-06-27-376-001.000-002",
+          "attomId": 8587105
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1442 S 11TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1442 S 11TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1341",
+          "postal3": "C018"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.451256",
+          "longitude": "-87.401321",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8587151,
+          "fips": "18167",
+          "apn": "84-06-27-376-007.000-002",
+          "attomId": 8587151
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1466 S 11TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1466 S 11TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1341",
+          "postal3": "C018"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.450601",
+          "longitude": "-87.401317",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087590, SB0000087591, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8587157,
+          "fips": "18167",
+          "apn": "84-09-03-151-012.000-005",
+          "attomId": 8587157
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "807 S PROSPECT ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "807 S PROSPECT ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4050",
+          "postal3": "C013"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.430064",
+          "longitude": "-87.405824",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, PL1875428, SB0000087590, SB0000087593, SB0000087602, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 64aa13786851cf9b805526b036b85e99",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8587182,
+          "fips": "18167",
+          "apn": "84-06-34-154-003.000-002",
+          "attomId": 8587182
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2110 S 7TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2110 S 7TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3025",
+          "postal3": "C052"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.443711",
+          "longitude": "-87.406508",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8746581,
+          "fips": "18167",
+          "apn": "84-06-33-303-003.000-002",
+          "attomId": 8746581
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2410 JEFFERSON ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2410 JEFFERSON ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2940",
+          "postal3": "C057"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.440606",
+          "longitude": "-87.421172",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 85e35d8c462e69d3e7542ee33f851f2b, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8746586,
+          "fips": "18167",
+          "apn": "84-06-34-104-008.000-002",
+          "attomId": 8746586
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1715 S 9TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1715 S 9TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2327",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.447784",
+          "longitude": "-87.404678",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8746593,
+          "fips": "18167",
+          "apn": "84-14-06-400-001.000-015",
+          "attomId": 8746593
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4838 E OREGON CHURCH RD",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4838 E OREGON CHURCH RD, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9523",
+          "postal3": "R024"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.337732",
+          "longitude": "-87.340298",
+          "distance": 0,
+          "geoid": "CO18167, CS1859652, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "4a56d2f437f103fffe7e516d23a8409a",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "0bd6b3f371437c0ced33cdfe89068691, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8746600,
+          "fips": "18167",
+          "apn": "84-06-28-483-017.000-002",
+          "attomId": 8746600
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1525 S 7TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1525 S 7TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1610",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.449985",
+          "longitude": "-87.407325",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090721, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "6b9d95eff0ab9dd32f70419c1fa4fcf8",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8746605,
+          "fips": "18167",
+          "apn": "84-06-28-476-020.000-002",
+          "attomId": 8746605
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "412 WILLOW ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "412 WILLOW ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1130",
+          "postal3": "C043"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.451459",
+          "longitude": "-87.411941",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090721, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "6b9d95eff0ab9dd32f70419c1fa4fcf8",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8746616,
+          "fips": "18167",
+          "apn": "84-06-28-406-001.000-002",
+          "attomId": 8746616
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1102 S 4TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1102 S 4TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1016",
+          "postal3": "C043"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.455425",
+          "longitude": "-87.412154",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090721, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "6b9d95eff0ab9dd32f70419c1fa4fcf8",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 85e35d8c462e69d3e7542ee33f851f2b, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8746618,
+          "fips": "18167",
+          "apn": "84-09-19-402-016.000-003",
+          "attomId": 8746618
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "6983 S CHARLES PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "6983 S CHARLES PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9071",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.382149",
+          "longitude": "-87.450713",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede, d10edec49e4e718bfc494cc5b61e56a7",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8837308,
+          "fips": "18167",
+          "apn": "84-09-26-377-018.000-004",
+          "attomId": 8837308
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2384 E GLENVIEW DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2384 E GLENVIEW DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "5166",
+          "postal3": "C056"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.364678",
+          "longitude": "-87.380341",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090420, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "cc0bbc7a5765d91f5410aa0ec5ce48fb",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 8944540,
+          "fips": "18167",
+          "apn": "84-09-13-253-004.000-004",
+          "attomId": 8944540
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "5533 IDLE CREEK CT",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "5533 IDLE CREEK CT, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8179",
+          "postal3": "R029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.398980",
+          "longitude": "-87.359461",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ND0000090642, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "b9150b82baf0a5fb3b9fa060fea6a7af",
+            "SB": "b628d750dde3fef1cc698396103e9ede, 0bd6b3f371437c0ced33cdfe89068691, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 9461142,
+          "fips": "18167",
+          "apn": "84-09-26-303-014.000-004",
+          "attomId": 9461142
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2025 BLUE RIDGE DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2025 BLUE RIDGE DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "5078",
+          "postal3": "C056"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.366120",
+          "longitude": "-87.383435",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090527, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "d2f62e9279b4d35fedb3435937ab6e88",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 9637679,
+          "fips": "18167",
+          "apn": "84-14-07-100-008.000-015",
+          "attomId": 9637679
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4575 E OREGON CHURCH RD",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4575 E OREGON CHURCH RD, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8231",
+          "postal3": "R024"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.330182",
+          "longitude": "-87.346298",
+          "distance": 0,
+          "geoid": "CO18167, CS1859652, DB1812090, SB0000087584, SB0000087588, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "4a56d2f437f103fffe7e516d23a8409a",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, 0bd6b3f371437c0ced33cdfe89068691, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 9637755,
+          "fips": "18167",
+          "apn": "84-06-27-434-001.000-002",
+          "attomId": 9637755
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1100 S 17TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1100 S 17TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1519",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.455434",
+          "longitude": "-87.390243",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087590, SB0000087593, SB0000087599, ZI47807",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 239fc5e8b217d81e6a556c6ef1c05118",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 9638159,
+          "fips": "18167",
+          "apn": "84-09-22-376-008.000-004",
+          "attomId": 9638159
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7286 S KINGSWOOD ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7286 S KINGSWOOD ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "7857",
+          "postal3": "R028"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.378174",
+          "longitude": "-87.400698",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090459, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "3e2115afb14eed9eb65ff49a2debe19c",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 10438618,
+          "fips": "18167",
+          "apn": "84-09-13-176-010.000-004",
+          "attomId": 10438618
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "5531 HALLIE RAE LN",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "5531 HALLIE RAE LN, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8194",
+          "postal3": "R029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.400047",
+          "longitude": "-87.362251",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ND0000090642, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "b9150b82baf0a5fb3b9fa060fea6a7af",
+            "SB": "b628d750dde3fef1cc698396103e9ede, 0bd6b3f371437c0ced33cdfe89068691, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 10775369,
+          "fips": "18167",
+          "apn": "84-06-27-326-006.000-002",
+          "attomId": 10775369
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1122 S 11TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1122 S 11TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1326",
+          "postal3": "C018"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.454924",
+          "longitude": "-87.401345",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087590, SB0000087591, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 10775379,
+          "fips": "18167",
+          "apn": "84-06-28-426-004.000-002",
+          "attomId": 10775379
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1112 S 5TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1112 S 5TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1102",
+          "postal3": "C043"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.455228",
+          "longitude": "-87.410837",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090721, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "6b9d95eff0ab9dd32f70419c1fa4fcf8",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 10796057,
+          "fips": "18167",
+          "apn": "84-06-34-277-009.000-002",
+          "attomId": 10796057
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2011 S 18TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2011 S 18TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2516",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.444517",
+          "longitude": "-87.389680",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "72f9930df3a4328009b5f32c26d1edb6",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 11475606,
+          "fips": "18167",
+          "apn": "84-06-27-327-012.000-002",
+          "attomId": 11475606
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1125 S 12TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1125 S 12TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1309",
+          "postal3": "C018"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.454873",
+          "longitude": "-87.399416",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 11538256,
+          "fips": "18167",
+          "apn": "84-09-10-327-015.000-004",
+          "attomId": 11538256
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1000 WINDSOR RD",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1000 WINDSOR RD, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4532",
+          "postal3": "C068"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.408452",
+          "longitude": "-87.401669",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000423228, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "c9818ec33c570fe86c2089c91701f8fa",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 11756357,
+          "fips": "18167",
+          "apn": "84-09-10-402-012.000-004",
+          "attomId": 11756357
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4610 S LOST ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4610 S LOST ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "6610",
+          "postal3": "C068"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.411094",
+          "longitude": "-87.394667",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090441, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "768706bd62b83b11e71927463af8e2e6",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, 64aa13786851cf9b805526b036b85e99",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 12859168,
+          "fips": "18167",
+          "apn": "84-13-10-300-019.000-006",
+          "attomId": 12859168
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "12045 S CARLISLE ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "12045 S CARLISLE ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9670",
+          "postal3": "R023"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.320744",
+          "longitude": "-87.402641",
+          "distance": 0,
+          "geoid": "CO18167, CS1844208, DB1812090, SB0000087584, SB0000087593, SB0000087600, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "bb3c61de7778349893e14b17aa8eb318",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13114401,
+          "fips": "18167",
+          "apn": "84-06-34-151-012.000-002",
+          "attomId": 13114401
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2031 S 8TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2031 S 8TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3107",
+          "postal3": "C052"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.444103",
+          "longitude": "-87.405951",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13327204,
+          "fips": "18167",
+          "apn": "84-09-26-326-013.000-004",
+          "attomId": 13327204
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2385 E EATON DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2385 E EATON DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "5029",
+          "postal3": "C056"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.368422",
+          "longitude": "-87.380328",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090527, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "d2f62e9279b4d35fedb3435937ab6e88",
+            "SB": "b628d750dde3fef1cc698396103e9ede, e9b6d604166cf57e65d581ccdc73ef1e, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13327205,
+          "fips": "18167",
+          "apn": "84-06-34-385-019.000-002",
+          "attomId": 13327205
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2904 S 12TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2904 S 12TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3824",
+          "postal3": "C041"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.435460",
+          "longitude": "-87.398347",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "64aa13786851cf9b805526b036b85e99, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13327211,
+          "fips": "18167",
+          "apn": "84-09-36-100-013.000-003",
+          "attomId": 13327211
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "8901 MCDANIEL RD",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "8901 MCDANIEL RD, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9682",
+          "postal3": "R020"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.358808",
+          "longitude": "-87.361162",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, e9b6d604166cf57e65d581ccdc73ef1e, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13722792,
+          "fips": "18167",
+          "apn": "84-09-10-103-009.000-004",
+          "attomId": 13722792
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4037 S 10TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4037 S 10TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "5704",
+          "postal3": "C004"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.418346",
+          "longitude": "-87.402448",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090732, SB0000087590, SB0000087593, SB0000087602, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "b91d06b3e031d8ad51942229bb4f1e4e",
+            "SB": "64aa13786851cf9b805526b036b85e99, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13748590,
+          "fips": "18167",
+          "apn": "84-09-19-279-005.000-003",
+          "attomId": 13748590
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1800 OAKRIDGE PKWY N",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1800 OAKRIDGE PKWY N, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "7805",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.385983",
+          "longitude": "-87.445404",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090727, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "e2879931a07e54e5861e0b1c8e709d9c",
+            "SB": "b628d750dde3fef1cc698396103e9ede, d10edec49e4e718bfc494cc5b61e56a7, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13748601,
+          "fips": "18167",
+          "apn": "84-06-27-481-003.000-002",
+          "attomId": 13748601
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1610 S 17TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1610 S 17TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2503",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.448963",
+          "longitude": "-87.390210",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13798467,
+          "fips": "18167",
+          "apn": "84-09-27-127-002.000-004",
+          "attomId": 13798467
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7660 S WILLIAMSBURG ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7660 S WILLIAMSBURG ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9337",
+          "postal3": "R028"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.373889",
+          "longitude": "-87.401453",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090478, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "efcbfa430a1ef2bf9533581f78fba997",
+            "SB": "bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13798912,
+          "fips": "18167",
+          "apn": "84-09-22-206-003.000-004",
+          "attomId": 13798912
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "165 ALLENDALE CT",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "165 ALLENDALE CT, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4701",
+          "postal3": "C006"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.386887",
+          "longitude": "-87.393590",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, SB0000087581, SB0000087584, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "e9b6d604166cf57e65d581ccdc73ef1e, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 13931442,
+          "fips": "18167",
+          "apn": "84-09-23-253-013.000-004",
+          "attomId": 13931442
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "95 FOREST GLEN CT",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "95 FOREST GLEN CT, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "5917",
+          "postal3": "C006"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.383429",
+          "longitude": "-87.378375",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090480, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "8c82ad694e82b7d27fed5ed7d45de84d",
+            "SB": "e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 14638761,
+          "fips": "18167",
+          "apn": "84-09-29-154-009.000-003",
+          "attomId": 14638761
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1454 W TOMAHAWK DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1454 W TOMAHAWK DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "7704",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.368884",
+          "longitude": "-87.440468",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090419, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "383fe2c8706afbdbc634f96a3a5eee0e",
+            "SB": "d10edec49e4e718bfc494cc5b61e56a7, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 14938334,
+          "fips": "18167",
+          "apn": "84-06-28-406-013.000-002",
+          "attomId": 14938334
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1208 S 4TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1208 S 4TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1018",
+          "postal3": "C043"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.454106",
+          "longitude": "-87.412144",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090721, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "6b9d95eff0ab9dd32f70419c1fa4fcf8",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "85e35d8c462e69d3e7542ee33f851f2b, bf311453f277e13358ab4d215220b908, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 14938335,
+          "fips": "18167",
+          "apn": "84-06-35-133-002.000-002",
+          "attomId": 14938335
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2006 S 23RD ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2006 S 23RD ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2645",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.445255",
+          "longitude": "-87.383178",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, SB0000087590, SB0000087591, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 14941429,
+          "fips": "18167",
+          "apn": "84-06-27-307-016.000-002",
+          "attomId": 14941429
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1231 S 10TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1231 S 10TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1319",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.453639",
+          "longitude": "-87.403424",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087590, SB0000087591, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 15665474,
+          "fips": "18167",
+          "apn": "84-13-03-300-010.000-006",
+          "attomId": 15665474
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "11051 S CARLISLE ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "11051 S CARLISLE ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9672",
+          "postal3": "R022"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.332848",
+          "longitude": "-87.401875",
+          "distance": 0,
+          "geoid": "CO18167, CS1844208, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "bb3c61de7778349893e14b17aa8eb318",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "d10edec49e4e718bfc494cc5b61e56a7, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 15682843,
+          "fips": "18167",
+          "apn": "84-09-12-476-012.000-004",
+          "attomId": 15682843
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4202 IRONWOOD LN",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4202 IRONWOOD LN, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8140",
+          "postal3": "R020"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.408361",
+          "longitude": "-87.351989",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ND0000090642, SB0000087584, SB0000087588, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "b9150b82baf0a5fb3b9fa060fea6a7af",
+            "SB": "0bd6b3f371437c0ced33cdfe89068691, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 16636536,
+          "fips": "18167",
+          "apn": "84-09-10-251-006.000-004",
+          "attomId": 16636536
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4410 S 13TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4410 S 13TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4326",
+          "postal3": "C004"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.413015",
+          "longitude": "-87.396948",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, 64aa13786851cf9b805526b036b85e99",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 16636540,
+          "fips": "18167",
+          "apn": "84-06-27-477-023.000-002",
+          "attomId": 16636540
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1519 S 17TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1519 S 17TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1526",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.450405",
+          "longitude": "-87.390894",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087590, SB0000087591, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 907ec8c030c7190dbd9e3a21f8ab553c, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 16699017,
+          "fips": "18167",
+          "apn": "84-06-27-477-025.000-002",
+          "attomId": 16699017
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1601 WASHINGTON AVE",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1601 WASHINGTON AVE, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1544",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.451802",
+          "longitude": "-87.391522",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087590, SB0000087591, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 907ec8c030c7190dbd9e3a21f8ab553c, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 19997265,
+          "fips": "18167",
+          "apn": "84-13-34-100-015.000-006",
+          "attomId": 19997265
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "15977 APPLEDORE LN",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "15977 APPLEDORE LN, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8659",
+          "postal3": "R023"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.272400",
+          "longitude": "-87.399284",
+          "distance": 0,
+          "geoid": "CO18167, CS1844208, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "bb3c61de7778349893e14b17aa8eb318",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "d10edec49e4e718bfc494cc5b61e56a7, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 19997266,
+          "fips": "18167",
+          "apn": "84-06-28-478-020.000-002",
+          "attomId": 19997266
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1633 S 6TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1633 S 6TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1608",
+          "postal3": "C043"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.449012",
+          "longitude": "-87.410228",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090721, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "6b9d95eff0ab9dd32f70419c1fa4fcf8",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 85e35d8c462e69d3e7542ee33f851f2b, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 19997272,
+          "fips": "18167",
+          "apn": "84-09-10-378-005.000-004",
+          "attomId": 19997272
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1103 E SOUTHPORT DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1103 E SOUTHPORT DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4652",
+          "postal3": "C068"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.406223",
+          "longitude": "-87.399992",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, SB0000087581, SB0000087584, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "e9b6d604166cf57e65d581ccdc73ef1e, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 20057031,
+          "fips": "18167",
+          "apn": "84-09-21-476-034.000-004",
+          "attomId": 20057031
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7399 WOODCRAFT LN",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7399 WOODCRAFT LN, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9814",
+          "postal3": "R028"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.377297",
+          "longitude": "-87.408355",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090654, SB0000087581, SB0000087584, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "316481701ebb5a3a07d4714a5263ed26",
+            "SB": "bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 20392868,
+          "fips": "18167",
+          "apn": "84-10-05-351-023.000-018",
+          "attomId": 20392868
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "3859 HONEYSUCKLE CT",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "3859 HONEYSUCKLE CT, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8216",
+          "postal3": "R027"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.419416",
+          "longitude": "-87.328726",
+          "distance": 0,
+          "geoid": "CO18167, CS1864530, DB1812090, RS0000090709, SB0000087584, SB0000087588, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "ae5c846327381f5ec6952ac01e40dfd7",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "ca8b15a94e90103ce7990549906ad0ff",
+            "SB": "0bd6b3f371437c0ced33cdfe89068691, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 20959865,
+          "fips": "18167",
+          "apn": "84-09-36-376-001.000-003",
+          "attomId": 20959865
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "9626 KATE CT",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "9626 KATE CT, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8688",
+          "postal3": "R020"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.350251",
+          "longitude": "-87.364753",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090778, SB0000087581, SB0000087584, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "85f2b9c2bb02ffd256b3153547e95252",
+            "SB": "bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 21371637,
+          "fips": "18167",
+          "apn": "84-09-26-427-009.000-003",
+          "attomId": 21371637
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "8131 S CHEROKEE ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "8131 S CHEROKEE ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "5011",
+          "postal3": "C056"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.368354",
+          "longitude": "-87.371319",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22065725,
+          "fips": "18167",
+          "apn": "84-06-33-333-010.000-002",
+          "attomId": 22065725
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2631 ARLETH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2631 ARLETH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2913",
+          "postal3": "C057"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.438182",
+          "longitude": "-87.418002",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22065726,
+          "fips": "18167",
+          "apn": "84-09-27-126-005.000-004",
+          "attomId": 22065726
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7600 S WILLIAMSBURG ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7600 S WILLIAMSBURG ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9337",
+          "postal3": "R028"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.374719",
+          "longitude": "-87.401078",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090478, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "efcbfa430a1ef2bf9533581f78fba997",
+            "SB": "e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22065759,
+          "fips": "18167",
+          "apn": "84-08-25-153-004.000-017",
+          "attomId": 22065759
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7826 S PATTON ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7826 S PATTON ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "7701",
+          "postal3": "R026"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.371842",
+          "longitude": "-87.474991",
+          "distance": 0,
+          "geoid": "CO18167, CS1861776, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "1766db12b51d3c5f21d30d38ae3b8c35",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, d10edec49e4e718bfc494cc5b61e56a7, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22065764,
+          "fips": "18167",
+          "apn": "84-06-27-315-014.000-002",
+          "attomId": 22065764
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1425 S 10TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1425 S 10TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1323",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.451749",
+          "longitude": "-87.403411",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "85e35d8c462e69d3e7542ee33f851f2b, bf311453f277e13358ab4d215220b908, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22065766,
+          "fips": "18167",
+          "apn": "84-06-34-378-003.000-002",
+          "attomId": 22065766
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1156 HELEN AVE",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1156 HELEN AVE, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3852",
+          "postal3": "C041"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.436901",
+          "longitude": "-87.398971",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, SB0000087590, SB0000087593, SB0000087602, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 64aa13786851cf9b805526b036b85e99, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22065769,
+          "fips": "18167",
+          "apn": "84-06-34-108-016.000-002",
+          "attomId": 22065769
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1829 S 9TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1829 S 9TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2329",
+          "postal3": "C052"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.446287",
+          "longitude": "-87.404668",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, RS0000090788, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "3bd0f12c42906372a0e0eed8551451dd",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22512073,
+          "fips": "18167",
+          "apn": "84-09-07-477-011.000-004",
+          "attomId": 22512073
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4937 BENJAMIN RD",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4937 BENJAMIN RD, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9353",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.406531",
+          "longitude": "-87.445341",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 22512074,
+          "fips": "18167",
+          "apn": "84-09-19-403-007.000-003",
+          "attomId": 22512074
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7050 S CHARLES PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7050 S CHARLES PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9116",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.381360",
+          "longitude": "-87.449953",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23099742,
+          "fips": "18167",
+          "apn": "84-09-10-276-014.000-004",
+          "attomId": 23099742
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "4384 S HIDDEN WAY ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "4384 S HIDDEN WAY ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4386",
+          "postal3": "C004"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.415225",
+          "longitude": "-87.390991",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090761, SB0000087584, SB0000087593, SB0000087602, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "ddda507f2987346773a38110a7780e67",
+            "SB": "64aa13786851cf9b805526b036b85e99, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23099748,
+          "fips": "18167",
+          "apn": "84-09-15-104-008.000-004",
+          "attomId": 23099748
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1 S MELISSA WAY",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1 S MELISSA WAY, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4629",
+          "postal3": "C068"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.403778",
+          "longitude": "-87.401494",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000090723, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "7043f173735f30667a33f839b1fb1190",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23099750,
+          "fips": "18167",
+          "apn": "84-09-10-351-012.000-004",
+          "attomId": 23099750
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "927 E AZALIA DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "927 E AZALIA DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4558",
+          "postal3": "C068"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.408823",
+          "longitude": "-87.402754",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000423228, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "57f588dc5cf14591194202c16f5781b3",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, e9b6d604166cf57e65d581ccdc73ef1e",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23100438,
+          "fips": "18167",
+          "apn": "84-06-34-152-008.000-002",
+          "attomId": 23100438
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2030 S 8TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2030 S 8TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3108",
+          "postal3": "C052"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.444108",
+          "longitude": "-87.405292",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23100439,
+          "fips": "18167",
+          "apn": "84-06-33-279-008.000-002",
+          "attomId": 23100439
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2111 S 6TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2111 S 6TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3007",
+          "postal3": "C071"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.443649",
+          "longitude": "-87.410166",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, RS0000090755, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "cd3939c4219b962bedda362dd233b8df",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23178885,
+          "fips": "18167",
+          "apn": "84-12-21-100-029.000-016",
+          "attomId": 23178885
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "13657 S KEEGAN PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "13657 S KEEGAN PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9450",
+          "postal3": "R026"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.300954",
+          "longitude": "-87.526443",
+          "distance": 0,
+          "geoid": "CO18167, CS1861704, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "4d0e45c8e2e80e60861715ab075a2063",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23178888,
+          "fips": "18167",
+          "apn": "84-06-33-310-002.000-002",
+          "attomId": 23178888
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2604 JEFFERSON ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2604 JEFFERSON ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2944",
+          "postal3": "C057"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.438786",
+          "longitude": "-87.421151",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, SB0000087582, SB0000087590, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "bf311453f277e13358ab4d215220b908, 85e35d8c462e69d3e7542ee33f851f2b, fbbdfb4166fa632ed71b2346b3a1479f",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23914209,
+          "fips": "18167",
+          "apn": "84-09-10-351-016.000-004",
+          "attomId": 23914209
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "806 WINDSOR RD",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "806 WINDSOR RD, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4540",
+          "postal3": "C068"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.408505",
+          "longitude": "-87.405643",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000423228, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "57f588dc5cf14591194202c16f5781b3",
+            "SB": "e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23914213,
+          "fips": "18167",
+          "apn": "84-06-27-334-012.000-002",
+          "attomId": 23914213
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1321 S 13TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1321 S 13TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1413",
+          "postal3": "C018"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.452929",
+          "longitude": "-87.398027",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23914214,
+          "fips": "18167",
+          "apn": "84-09-03-126-005.000-005",
+          "attomId": 23914214
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "3050 S 10TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "3050 S 10TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3913",
+          "postal3": "C013"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.432520",
+          "longitude": "-87.401826",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, PL1875428, RS0000090791, SB0000087590, SB0000087593, SB0000087602, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "bf91b487a0a6f09af9cc82f78f082742",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 64aa13786851cf9b805526b036b85e99, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23914218,
+          "fips": "18167",
+          "apn": "84-06-27-301-017.000-002",
+          "attomId": 23914218
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1133 S 8TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1133 S 8TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1258",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.454687",
+          "longitude": "-87.406017",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 85e35d8c462e69d3e7542ee33f851f2b, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23914277,
+          "fips": "18167",
+          "apn": "84-06-35-251-008.000-002",
+          "attomId": 23914277
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1936 S 25TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1936 S 25TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "2713",
+          "postal3": "C051"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.444085",
+          "longitude": "-87.378413",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "d7200665321b71ce19dd598255906604, 907ec8c030c7190dbd9e3a21f8ab553c, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 23914409,
+          "fips": "18167",
+          "apn": "84-06-34-252-001.000-002",
+          "attomId": 23914409
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2330 S 13TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2330 S 13TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3102",
+          "postal3": "C018"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.441345",
+          "longitude": "-87.397373",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, SB0000087590, SB0000087591, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "907ec8c030c7190dbd9e3a21f8ab553c, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 24165861,
+          "fips": "18167",
+          "apn": "84-12-21-100-024.000-016",
+          "attomId": 24165861
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "13995 S KEEGAN PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "13995 S KEEGAN PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9450",
+          "postal3": "R026"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.297033",
+          "longitude": "-87.527176",
+          "distance": 0,
+          "geoid": "CO18167, CS1861704, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "4d0e45c8e2e80e60861715ab075a2063",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 24205099,
+          "fips": "18167",
+          "apn": "84-12-21-400-031.000-016",
+          "attomId": 24205099
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "14274 S KEEGAN PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "14274 S KEEGAN PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9456",
+          "postal3": "R026"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.293892",
+          "longitude": "-87.525153",
+          "distance": 0,
+          "geoid": "CO18167, CS1861704, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "4d0e45c8e2e80e60861715ab075a2063",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede, d10edec49e4e718bfc494cc5b61e56a7",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 24405621,
+          "fips": "18167",
+          "apn": "84-13-03-400-035.000-006",
+          "attomId": 24405621
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1495 PATRIOT LN",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1495 PATRIOT LN, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "7709",
+          "postal3": "R023"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.337539",
+          "longitude": "-87.396152",
+          "distance": 0,
+          "geoid": "CO18167, CS1844208, DB1812090, RS0000090720, SB0000087584, SB0000087593, SB0000087600, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "bb3c61de7778349893e14b17aa8eb318",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "ae771fcc7116db7c48eb9abe174560c3",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 24670282,
+          "fips": "18167",
+          "apn": "84-06-27-304-008.000-002",
+          "attomId": 24670282
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1130 S 10TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1130 S 10TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "1318",
+          "postal3": "C029"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.454692",
+          "longitude": "-87.402680",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, ND0000090767, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N2": "120ff245130f45de702d598feefe6d38",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 907ec8c030c7190dbd9e3a21f8ab553c",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 24670303,
+          "fips": "18167",
+          "apn": "84-06-34-305-006.000-002",
+          "attomId": 24670303
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "2524 S 7TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "2524 S 7TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3506",
+          "postal3": "C041"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.438793",
+          "longitude": "-87.406488",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908, 64aa13786851cf9b805526b036b85e99",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 24670412,
+          "fips": "18167",
+          "apn": "84-09-19-428-009.000-003",
+          "attomId": 24670412
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "6982 S WILCOCKS PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "6982 S WILCOCKS PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "7835",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.382120",
+          "longitude": "-87.444729",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, SB0000087584, SB0000087593, SB0000087600, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, d10edec49e4e718bfc494cc5b61e56a7",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 25163572,
+          "fips": "18167",
+          "apn": "84-10-05-379-008.000-018",
+          "attomId": 25163572
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "3842 WISTERIA CT",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "3842 WISTERIA CT, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "8217",
+          "postal3": "R027"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.420031",
+          "longitude": "-87.326142",
+          "distance": 0,
+          "geoid": "CO18167, CS1864530, DB1812090, RS0000090709, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "ae5c846327381f5ec6952ac01e40dfd7",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "ca8b15a94e90103ce7990549906ad0ff",
+            "SB": "b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908, 0bd6b3f371437c0ced33cdfe89068691",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 25641670,
+          "fips": "18167",
+          "apn": "84-06-34-279-019.000-002",
+          "attomId": 25641670
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "1831 ORIN DR",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "1831 ORIN DR, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3231",
+          "postal3": "C003"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.442084",
+          "longitude": "-87.389442",
+          "distance": 0,
+          "geoid": "CO18167, CS1832026, DB1812090, PL1875428, RS0000090426, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "f153fb03d1c983940ed8be57c9555229",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "9f072857a8f53e74dc541f1dcbe892ea",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "fbbdfb4166fa632ed71b2346b3a1479f, 907ec8c030c7190dbd9e3a21f8ab553c, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 26034874,
+          "fips": "18167",
+          "apn": "84-09-10-352-001.000-004",
+          "attomId": 26034874
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "701 WINDSOR RD",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "701 WINDSOR RD, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4537",
+          "postal3": "C068"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.408052",
+          "longitude": "-87.406526",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, RS0000423228, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "57f588dc5cf14591194202c16f5781b3",
+            "SB": "b628d750dde3fef1cc698396103e9ede, e9b6d604166cf57e65d581ccdc73ef1e, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 26296363,
+          "fips": "18167",
+          "apn": "84-09-15-477-003.000-004",
+          "attomId": 26296363
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "89 ALLENDALE",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "89 ALLENDALE, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4751",
+          "postal3": "C002"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.392573",
+          "longitude": "-87.390994",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, SB0000087581, SB0000087584, SB0000087593, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "SB": "e9b6d604166cf57e65d581ccdc73ef1e, b628d750dde3fef1cc698396103e9ede, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 26346589,
+          "fips": "18167",
+          "apn": "84-10-16-253-007.000-018",
+          "attomId": 26346589
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "5672 HAZELGREEN CT",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "5672 HAZELGREEN CT, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "9209",
+          "postal3": "R027"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.398127",
+          "longitude": "-87.303598",
+          "distance": 0,
+          "geoid": "CO18167, CS1864530, DB1812090, RS0000090545, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "ae5c846327381f5ec6952ac01e40dfd7",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "a9fa09a80674f15e4cc2546ca17dbc79",
+            "SB": "bf311453f277e13358ab4d215220b908, 0bd6b3f371437c0ced33cdfe89068691, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 26822059,
+          "fips": "18167",
+          "apn": "84-09-04-277-007.000-005",
+          "attomId": 26822059
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "3201 S 6TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "3201 S 6TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4006",
+          "postal3": "C013"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.430270",
+          "longitude": "-87.409709",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, PL1875428, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "64aa13786851cf9b805526b036b85e99, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 26822066,
+          "fips": "18167",
+          "apn": "84-09-03-128-010.000-005",
+          "attomId": 26822066
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "3033 S 12TH ST",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "3033 S 12TH ST, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "3924",
+          "postal3": "C013"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.432617",
+          "longitude": "-87.398974",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, PL1875428, RS0000090791, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "f54c776d978843c53754c6879192aaf0",
+            "PL": "aa013d66d6137f9509dccf171deefbae",
+            "SB": "64aa13786851cf9b805526b036b85e99, fbbdfb4166fa632ed71b2346b3a1479f, bf311453f277e13358ab4d215220b908",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 26975935,
+          "fips": "18167",
+          "apn": "84-08-24-476-014.000-017",
+          "attomId": 26975935
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "7355 S TRUEBLOOD PL",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "7355 S TRUEBLOOD PL, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "7703",
+          "postal3": "R021"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.377017",
+          "longitude": "-87.460669",
+          "distance": 0,
+          "geoid": "CO18167, CS1861776, DB1812090, RS0000090693, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "1766db12b51d3c5f21d30d38ae3b8c35",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "b72eeda0982fdc5166720788ea791e3b",
+            "SB": "d10edec49e4e718bfc494cc5b61e56a7, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      },
+      {
+        "identifier": {
+          "Id": 27668361,
+          "fips": "18167",
+          "apn": "84-09-15-427-001.000-004",
+          "attomId": 27668361
+        },
+        "address": {
+          "country": "US",
+          "countrySubd": "IN",
+          "line1": "29 ALLENDALE",
+          "line2": "TERRE HAUTE, IN 47802",
+          "locality": "TERRE HAUTE",
+          "matchCode": "ExaStr",
+          "oneLine": "29 ALLENDALE, TERRE HAUTE, IN 47802",
+          "postal1": "47802",
+          "postal2": "4751",
+          "postal3": "C002"
+        },
+        "location": {
+          "accuracy": "Rooftop",
+          "latitude": "39.396710",
+          "longitude": "-87.390663",
+          "distance": 0,
+          "geoid": "CO18167, CS1834546, DB1812090, ZI47802",
+          "geoIdV4": {
+            "CO": "b32809c5f67d3fd725b31dda5c34e802",
+            "CS": "c050a100aa8f093d9e2887967284d320",
+            "DB": "f666531aa3d44e99272e25b7886369c4",
+            "N4": "bd10d0efdcd31cc67bf2a59d4a8cf293",
+            "SB": "e9b6d604166cf57e65d581ccdc73ef1e, bf311453f277e13358ab4d215220b908, b628d750dde3fef1cc698396103e9ede",
+            "ZI": "bed0c542f6945b3f074ea9bd480a8cf1"
+          }
+        },
+        "vintage": {
+          "lastModified": "2025-02-27",
+          "pubDate": "2025-02-27"
+        }
+      }
+    ]
+  }
