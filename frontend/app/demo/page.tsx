@@ -77,9 +77,7 @@ export default function Demo() {
     }
   };
 
-  // Initialize map and store userId on component mount
   useEffect(() => {
-    // Generate and store a UUID if not already stored
     const existingUserId = localStorage.getItem("userId");
     if (!existingUserId) {
       const userId = uuidv4();
