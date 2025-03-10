@@ -4,13 +4,9 @@ import { GeneralPropertyInfo } from "@/schemas/views/general-property-info-schem
 export const DEMO_PROPERTIES = [
   {
     address: "7315 Hwy 311, Sellersburg, IN 47172, USA",
-    lat: 38.3782,
-    lng: -85.7709
   },
   {
     address: "1206 W 186th St, Westfield, IN 46074, USA",
-    lat: 40.0584,
-    lng: -86.1822
   }
 ]
 
@@ -24,17 +20,18 @@ const dataPoint = (value: string | number | null, source: string | null = "Demo 
 // Mock property data for each address
 export const mockPropertyData: Record<string, GeneralPropertyInfo> = {
   "7315 Hwy 311, Sellersburg, IN 47172, USA": {
+    
     "Property Identification & Legal Framework": {
       "Geospatial Information": {
         latitude: dataPoint(38.3782, "Demo Data", "Latitude"),
         longitude: dataPoint(-85.7709, "Demo Data", "Longitude"),
-        munName: dataPoint("Philadelphia", "Demo Data", "Municipality Name"),
+        munName: dataPoint("Sellersburg", "Demo Data", "Municipality Name"),
         lotSize1: dataPoint("2.11 acres", "Demo Data", "Lot Size 1"),
         lotSize2: dataPoint("91,911 sq ft", "Demo Data", "Lot Size 2"),
         lotNum: dataPoint("A-1234", "Demo Data", "Lot Number"),
         country: dataPoint("United States", "Demo Data", "Country"),
-        countrySubd: dataPoint("Pennsylvania", "Demo Data", "Country Subdivision"),
-        oneline: dataPoint("1500 Market St. Philadelphia, PA 19102", "Demo Data", "One Line Address"),
+        countrySubd: dataPoint("Indiana", "Demo Data", "Country Subdivision"),
+        oneline: dataPoint("7315 Hwy 311, Sellersburg, IN 47172, USA", "Demo Data", "One Line Address"),
         locality: dataPoint("Sellersburg", "Demo Data", "Locality"),
         subdName: dataPoint("Market West", "Demo Data", "Subdivision Name"),
       },

@@ -49,10 +49,6 @@ export default function PropertyAnalysisDashboard() {
         try {
           // Fetch ATTOM data
           await fetchAttomData(handler, propertyAddress);
-
-          // Fetch ATTOM data
-          await fetchAttomData(handler, propertyAddress);
-        
           // Extract county, state, and zoning code from property data
           const propertyInfo = handler.getGeneralInfo();      
           

@@ -70,3 +70,6 @@ coverage/
 .cache-loader/
 *.bak
 .vercel
+
+# Ignore the entire property-ai-agent folder
+property-ai-agent/
